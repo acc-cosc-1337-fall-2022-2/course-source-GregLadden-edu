@@ -2,6 +2,10 @@
 
 project("cosc1337")
 include_directories(inc)
+<<<<<<< HEAD
+=======
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -Wall")
+>>>>>>> 05a2e00 (Initial commit)
 
 MACRO(SUBDIRLIST result curdir)
   FILE(GLOB children RELATIVE ${curdir} ${curdir}/*)
