@@ -11,8 +11,11 @@ TEST_CASE("Verify sum_numbers function")
 	REQUIRE(add_numbers(10, 10) == 20);
 }
 
+<<<<<<< HEAD
 TEST_CASE("Test multiply_numbers function")
 {
     REQUIRE(multiply_numbers(10) == 50);
     REQUIRE(multiply_numbers(2) == 10);
 }
+=======
+>>>>>>> 05a2e00 (Initial commit)

@@ -1,16 +1,22 @@
 /*
 <<<<<<< HEAD
+<<<<<<< HEAD
  *  Catch v2.2.2
  *  Generated: 2018-04-06 12:05:03.186665
  *  ----------------------------------------------------------
  *  This file has been merged from multiple headers. Please don't edit it directly
  *  Copyright (c) 2018 Two Blue Cubes Ltd. All rights reserved.
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
  *  Catch v2.13.9
  *  Generated: 2022-04-12 22:37:23.260201
  *  ----------------------------------------------------------
  *  This file has been merged from multiple headers. Please don't edit it directly
  *  Copyright (c) 2022 Two Blue Cubes Ltd. All rights reserved.
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
  *
  *  Distributed under the Boost Software License, Version 1.0. (See accompanying
@@ -19,6 +25,7 @@
 #ifndef TWOBLUECUBES_SINGLE_INCLUDE_CATCH_HPP_INCLUDED
 #define TWOBLUECUBES_SINGLE_INCLUDE_CATCH_HPP_INCLUDED
 <<<<<<< HEAD
+<<<<<<< HEAD
  // start catch.hpp
 
 
@@ -26,12 +33,17 @@
 #define CATCH_VERSION_MINOR 2
 #define CATCH_VERSION_PATCH 2
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 // start catch.hpp
 
 
 #define CATCH_VERSION_MAJOR 2
 #define CATCH_VERSION_MINOR 13
 #define CATCH_VERSION_PATCH 9
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 #ifdef __clang__
@@ -48,7 +60,10 @@
 #       pragma warning(disable: 161 1682)
 #   else // __ICC
 <<<<<<< HEAD
+<<<<<<< HEAD
 #       pragma clang diagnostic ignored "-Wunused-variable"
+=======
+>>>>>>> 05a2e00 (Initial commit)
 =======
 >>>>>>> 05a2e00 (Initial commit)
 #       pragma clang diagnostic push
@@ -58,13 +73,19 @@
 #    endif
 #elif defined __GNUC__
 <<<<<<< HEAD
+<<<<<<< HEAD
 #    pragma GCC diagnostic ignored "-Wparentheses"
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
      // Because REQUIREs trigger GCC's -Wparentheses, and because still
      // supported version of g++ have only buggy support for _Pragmas,
      // Wparentheses have to be suppressed globally.
 #    pragma GCC diagnostic ignored "-Wparentheses" // See #674 for details
 
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #    pragma GCC diagnostic push
 #    pragma GCC diagnostic ignored "-Wunused-variable"
@@ -84,7 +105,13 @@
 #    undef CATCH_CONFIG_DISABLE_MATCHERS
 #  endif
 <<<<<<< HEAD
+<<<<<<< HEAD
 #  define CATCH_CONFIG_ENABLE_CHRONO_STRINGMAKER
+=======
+#  if !defined(CATCH_CONFIG_ENABLE_CHRONO_STRINGMAKER)
+#    define CATCH_CONFIG_ENABLE_CHRONO_STRINGMAKER
+#  endif
+>>>>>>> 05a2e00 (Initial commit)
 =======
 #  if !defined(CATCH_CONFIG_ENABLE_CHRONO_STRINGMAKER)
 #    define CATCH_CONFIG_ENABLE_CHRONO_STRINGMAKER
@@ -96,6 +123,7 @@
 // start catch_platform.h
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #ifdef __APPLE__
 # include <TargetConditionals.h>
 # if TARGET_OS_OSX == 1
@@ -104,6 +132,8 @@
 #  define CATCH_PLATFORM_IPHONE
 # endif
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 // See e.g.:
 // https://opensource.apple.com/source/CarbonHeaders/CarbonHeaders-18.1/TargetConditionals.h.auto.html
 #ifdef __APPLE__
@@ -114,13 +144,20 @@
 #  elif (defined(TARGET_OS_IPHONE) && TARGET_OS_IPHONE == 1)
 #    define CATCH_PLATFORM_IPHONE
 #  endif
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 #elif defined(linux) || defined(__linux) || defined(__linux__)
 #  define CATCH_PLATFORM_LINUX
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #elif defined(WIN32) || defined(__WIN32__) || defined(_WIN32) || defined(_MSC_VER)
+=======
+#elif defined(WIN32) || defined(__WIN32__) || defined(_WIN32) || defined(_MSC_VER) || defined(__MINGW32__)
+>>>>>>> 05a2e00 (Initial commit)
 =======
 #elif defined(WIN32) || defined(__WIN32__) || defined(_WIN32) || defined(_MSC_VER) || defined(__MINGW32__)
 >>>>>>> 05a2e00 (Initial commit)
@@ -140,7 +177,11 @@
 
 namespace Catch {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	unsigned int rngSeed();
+=======
+    unsigned int rngSeed();
+>>>>>>> 05a2e00 (Initial commit)
 =======
     unsigned int rngSeed();
 >>>>>>> 05a2e00 (Initial commit)
@@ -160,6 +201,10 @@ namespace Catch {
 // CATCH_CONFIG_WINDOWS_SEH : is Windows SEH supported?
 // CATCH_CONFIG_POSIX_SIGNALS : are POSIX signals supported?
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+// CATCH_CONFIG_DISABLE_EXCEPTIONS : Are exceptions enabled?
+>>>>>>> 05a2e00 (Initial commit)
 =======
 // CATCH_CONFIG_DISABLE_EXCEPTIONS : Are exceptions enabled?
 >>>>>>> 05a2e00 (Initial commit)
@@ -176,23 +221,30 @@ namespace Catch {
 #ifdef __cplusplus
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #  if __cplusplus >= 201402L
 #    define CATCH_CPP14_OR_GREATER
 #  endif
 
 #  if __cplusplus >= 201703L
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #  if (__cplusplus >= 201402L) || (defined(_MSVC_LANG) && _MSVC_LANG >= 201402L)
 #    define CATCH_CPP14_OR_GREATER
 #  endif
 
 #  if (__cplusplus >= 201703L) || (defined(_MSVC_LANG) && _MSVC_LANG >= 201703L)
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #    define CATCH_CPP17_OR_GREATER
 #  endif
 
 #endif
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #if defined(CATCH_CPP17_OR_GREATER)
 #  define CATCH_INTERNAL_CONFIG_CPP17_UNCAUGHT_EXCEPTIONS
@@ -213,6 +265,8 @@ namespace Catch {
 #       define CATCH_INTERNAL_UNSUPPRESS_PARENTHESES_WARNINGS \
             _Pragma( "clang diagnostic pop" )
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 // Only GCC compiler should be used in this block, so other compilers trying to
 // mask themselves as GCC should be ignored.
 #if defined(__GNUC__) && !defined(__clang__) && !defined(__ICC) && !defined(__CUDACC__) && !defined(__LCC__)
@@ -258,6 +312,9 @@ namespace Catch {
 
 #    define CATCH_INTERNAL_SUPPRESS_UNUSED_TEMPLATE_WARNINGS \
          _Pragma( "clang diagnostic ignored \"-Wunused-template\"" )
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 #endif // __clang__
@@ -266,7 +323,11 @@ namespace Catch {
 // Assume that non-Windows platforms support posix signals by default
 #if !defined(CATCH_PLATFORM_WINDOWS)
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define CATCH_INTERNAL_CONFIG_POSIX_SIGNALS
+=======
+    #define CATCH_INTERNAL_CONFIG_POSIX_SIGNALS
+>>>>>>> 05a2e00 (Initial commit)
 =======
     #define CATCH_INTERNAL_CONFIG_POSIX_SIGNALS
 >>>>>>> 05a2e00 (Initial commit)
@@ -276,7 +337,11 @@ namespace Catch {
 // We know some environments not to support full POSIX signals
 #if defined(__CYGWIN__) || defined(__QNX__) || defined(__EMSCRIPTEN__) || defined(__DJGPP__)
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define CATCH_INTERNAL_CONFIG_NO_POSIX_SIGNALS
+=======
+    #define CATCH_INTERNAL_CONFIG_NO_POSIX_SIGNALS
+>>>>>>> 05a2e00 (Initial commit)
 =======
     #define CATCH_INTERNAL_CONFIG_NO_POSIX_SIGNALS
 >>>>>>> 05a2e00 (Initial commit)
@@ -289,7 +354,10 @@ namespace Catch {
 
 ////////////////////////////////////////////////////////////////////////////////
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 // Android somehow still does not support std::to_string
 #if defined(__ANDROID__)
 #    define CATCH_INTERNAL_CONFIG_NO_CPP11_TO_STRING
@@ -309,6 +377,9 @@ namespace Catch {
 #endif
 
 ////////////////////////////////////////////////////////////////////////////////
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 // Cygwin
 #ifdef __CYGWIN__
@@ -317,8 +388,11 @@ namespace Catch {
 // see: http://stackoverflow.com/questions/36901803/gettimeofday-not-declared-in-this-scope-cygwin
 #   define _BSD_SOURCE
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 // some versions of cygwin (most) do not support std::to_string. Use the libstd check.
 // https://gcc.gnu.org/onlinedocs/gcc-4.8.2/libstdc++/api/a01053_source.html line 2812-2813
 # if !((__cplusplus >= 201103L) && defined(_GLIBCXX_USE_C99) \
@@ -327,17 +401,24 @@ namespace Catch {
 #    define CATCH_INTERNAL_CONFIG_NO_CPP11_TO_STRING
 
 # endif
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #endif // __CYGWIN__
 
 ////////////////////////////////////////////////////////////////////////////////
 // Visual C++
 <<<<<<< HEAD
+<<<<<<< HEAD
 #ifdef _MSC_VER
 
 #  if _MSC_VER >= 1900 // Visual Studio 2015 or newer
 #    define CATCH_INTERNAL_CONFIG_CPP17_UNCAUGHT_EXCEPTIONS
 #  endif
+=======
+#if defined(_MSC_VER)
+>>>>>>> 05a2e00 (Initial commit)
 =======
 #if defined(_MSC_VER)
 >>>>>>> 05a2e00 (Initial commit)
@@ -351,11 +432,14 @@ namespace Catch {
 #  endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #endif // _MSC_VER
 
 ////////////////////////////////////////////////////////////////////////////////
 
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #  if !defined(__clang__) // Handle Clang masquerading for msvc
 
 // MSVC traditional preprocessor needs some workaround for __VA_ARGS__
@@ -384,6 +468,9 @@ namespace Catch {
 #endif
 
 ////////////////////////////////////////////////////////////////////////////////
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 // DJGPP
 #ifdef __DJGPP__
@@ -392,13 +479,19 @@ namespace Catch {
 
 ////////////////////////////////////////////////////////////////////////////////
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 // Embarcadero C++Build
 #if defined(__BORLANDC__)
     #define CATCH_INTERNAL_CONFIG_POLYFILL_ISNAN
 #endif
 
 ////////////////////////////////////////////////////////////////////////////////
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 // Use of __COUNTER__ is suppressed during code analysis in
@@ -408,6 +501,7 @@ namespace Catch {
 // but user still might want to turn it off
 #if ( !defined(__JETBRAINS_IDE__) || __JETBRAINS_IDE__ >= 20170300L )
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define CATCH_INTERNAL_CONFIG_COUNTER
 #endif
 
@@ -416,6 +510,8 @@ namespace Catch {
 #endif
 #if defined(CATCH_INTERNAL_CONFIG_WINDOWS_SEH) && !defined(CATCH_CONFIG_NO_WINDOWS_SEH) && !defined(CATCH_CONFIG_WINDOWS_SEH)
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     #define CATCH_INTERNAL_CONFIG_COUNTER
 #endif
 
@@ -475,6 +571,9 @@ namespace Catch {
 #   define CATCH_CONFIG_COUNTER
 #endif
 #if defined(CATCH_INTERNAL_CONFIG_WINDOWS_SEH) && !defined(CATCH_CONFIG_NO_WINDOWS_SEH) && !defined(CATCH_CONFIG_WINDOWS_SEH) && !defined(CATCH_INTERNAL_CONFIG_NO_WINDOWS_SEH)
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #   define CATCH_CONFIG_WINDOWS_SEH
 #endif
@@ -488,6 +587,7 @@ namespace Catch {
 #endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #if defined(CATCH_INTERNAL_CONFIG_CPP17_UNCAUGHT_EXCEPTIONS) && !defined(CATCH_CONFIG_NO_CPP17_UNCAUGHT_EXCEPTIONS) && !defined(CATCH_CONFIG_CPP17_UNCAUGHT_EXCEPTIONS)
 #  define CATCH_CONFIG_CPP17_UNCAUGHT_EXCEPTIONS
 #endif
@@ -500,6 +600,8 @@ namespace Catch {
 #   define CATCH_INTERNAL_SUPPRESS_GLOBALS_WARNINGS
 #   define CATCH_INTERNAL_UNSUPPRESS_GLOBALS_WARNINGS
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #if !defined(CATCH_INTERNAL_CONFIG_NO_CPP11_TO_STRING) && !defined(CATCH_CONFIG_NO_CPP11_TO_STRING) && !defined(CATCH_CONFIG_CPP11_TO_STRING)
 #    define CATCH_CONFIG_CPP11_TO_STRING
 #endif
@@ -597,6 +699,9 @@ namespace Catch {
 
 #if defined(CATCH_INTERNAL_CONFIG_TRADITIONAL_MSVC_PREPROCESSOR) && !defined(CATCH_CONFIG_NO_TRADITIONAL_MSVC_PREPROCESSOR) && !defined(CATCH_CONFIG_TRADITIONAL_MSVC_PREPROCESSOR)
 #define CATCH_CONFIG_TRADITIONAL_MSVC_PREPROCESSOR
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #endif
 
@@ -613,6 +718,7 @@ namespace Catch {
 #include <string>
 #include <cstdint>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 namespace Catch {
 
@@ -669,6 +775,8 @@ namespace Catch {
 		return value;
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 // We need a dummy global operator<< so we can bring it into Catch namespace later
 struct Catch_global_namespace_dummy {};
 std::ostream& operator<<(std::ostream&, Catch_global_namespace_dummy);
@@ -730,6 +838,9 @@ namespace Catch {
     T const& operator + ( T const& value, StreamEndStop ) {
         return value;
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 
@@ -740,9 +851,15 @@ namespace Catch {
 namespace Catch {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	struct RegistrarForTagAliases {
 		RegistrarForTagAliases(char const* alias, char const* tag, SourceLineInfo const& lineInfo);
 	};
+=======
+    struct RegistrarForTagAliases {
+        RegistrarForTagAliases( char const* alias, char const* tag, SourceLineInfo const& lineInfo );
+    };
+>>>>>>> 05a2e00 (Initial commit)
 =======
     struct RegistrarForTagAliases {
         RegistrarForTagAliases( char const* alias, char const* tag, SourceLineInfo const& lineInfo );
@@ -753,14 +870,20 @@ namespace Catch {
 
 #define CATCH_REGISTER_TAG_ALIAS( alias, spec ) \
 <<<<<<< HEAD
+<<<<<<< HEAD
     CATCH_INTERNAL_SUPPRESS_GLOBALS_WARNINGS \
     namespace{ Catch::RegistrarForTagAliases INTERNAL_CATCH_UNIQUE_NAME( AutoRegisterTagAlias )( alias, spec, CATCH_INTERNAL_LINEINFO ); } \
     CATCH_INTERNAL_UNSUPPRESS_GLOBALS_WARNINGS
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     CATCH_INTERNAL_START_WARNINGS_SUPPRESSION \
     CATCH_INTERNAL_SUPPRESS_GLOBALS_WARNINGS \
     namespace{ Catch::RegistrarForTagAliases INTERNAL_CATCH_UNIQUE_NAME( AutoRegisterTagAlias )( alias, spec, CATCH_INTERNAL_LINEINFO ); } \
     CATCH_INTERNAL_STOP_WARNINGS_SUPPRESSION
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 // end catch_tag_alias_autoregistrar.h
@@ -769,6 +892,7 @@ namespace Catch {
 // start catch_interfaces_testcase.h
 
 #include <vector>
+<<<<<<< HEAD
 <<<<<<< HEAD
 #include <memory>
 
@@ -796,6 +920,8 @@ namespace Catch {
 	std::vector<TestCase> filterTests(std::vector<TestCase> const& testCases, TestSpec const& testSpec, IConfig const& config);
 	std::vector<TestCase> const& getAllTestCasesSorted(IConfig const& config);
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 
 namespace Catch {
 
@@ -819,6 +945,9 @@ namespace Catch {
     bool matchTest( TestCase const& testCase, TestSpec const& testSpec, IConfig const& config );
     std::vector<TestCase> filterTests( std::vector<TestCase> const& testCases, TestSpec const& testSpec, IConfig const& config );
     std::vector<TestCase> const& getAllTestCasesSorted( IConfig const& config );
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 }
@@ -829,6 +958,7 @@ namespace Catch {
 #include <cstddef>
 #include <string>
 #include <iosfwd>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 namespace Catch {
@@ -979,6 +1109,8 @@ namespace Catch {
 		~AutoReg();
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #include <cassert>
 
 namespace Catch {
@@ -1370,11 +1502,15 @@ struct AutoReg : NonCopyable {
     AutoReg( ITestInvoker* invoker, SourceLineInfo const& lineInfo, StringRef const& classOrMethod, NameAndTags const& nameAndTags ) noexcept;
     ~AutoReg();
 };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
 
 #if defined(CATCH_CONFIG_DISABLE)
+<<<<<<< HEAD
 <<<<<<< HEAD
 #define INTERNAL_CATCH_TESTCASE_NO_REGISTRATION( TestName, ... ) \
         static void TestName()
@@ -1382,16 +1518,22 @@ struct AutoReg : NonCopyable {
         namespace{                        \
             struct TestName : ClassName { \
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     #define INTERNAL_CATCH_TESTCASE_NO_REGISTRATION( TestName, ... ) \
         static void TestName()
     #define INTERNAL_CATCH_TESTCASE_METHOD_NO_REGISTRATION( TestName, ClassName, ... ) \
         namespace{                        \
             struct TestName : INTERNAL_CATCH_REMOVE_PARENS(ClassName) { \
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
                 void test();              \
             };                            \
         }                                 \
         void TestName::test()
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 #endif
@@ -1418,6 +1560,8 @@ struct AutoReg : NonCopyable {
         namespace{ \
             struct TestName : ClassName{ \
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     #define INTERNAL_CATCH_TEMPLATE_TEST_CASE_NO_REGISTRATION_2( TestName, TestFunc, Name, Tags, Signature, ... )  \
         INTERNAL_CATCH_DEFINE_SIG_TEST(TestFunc, INTERNAL_CATCH_REMOVE_PARENS(Signature))
     #define INTERNAL_CATCH_TEMPLATE_TEST_CASE_METHOD_NO_REGISTRATION_2( TestNameClass, TestName, ClassName, Name, Tags, Signature, ... )    \
@@ -1485,11 +1629,15 @@ struct AutoReg : NonCopyable {
         CATCH_INTERNAL_SUPPRESS_GLOBALS_WARNINGS \
         namespace{ \
             struct TestName : INTERNAL_CATCH_REMOVE_PARENS(ClassName) { \
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
                 void test(); \
             }; \
             Catch::AutoReg INTERNAL_CATCH_UNIQUE_NAME( autoRegistrar ) ( Catch::makeTestInvoker( &TestName::test ), CATCH_INTERNAL_LINEINFO, #ClassName, Catch::NameAndTags{ __VA_ARGS__ } ); /* NOLINT */ \
         } \
+<<<<<<< HEAD
 <<<<<<< HEAD
         CATCH_INTERNAL_UNSUPPRESS_GLOBALS_WARNINGS \
         void TestName::test()
@@ -1502,6 +1650,8 @@ struct AutoReg : NonCopyable {
         Catch::AutoReg INTERNAL_CATCH_UNIQUE_NAME( autoRegistrar )( Catch::makeTestInvoker( Function ), CATCH_INTERNAL_LINEINFO, "", Catch::NameAndTags{ __VA_ARGS__ } ); /* NOLINT */ \
         CATCH_INTERNAL_UNSUPPRESS_GLOBALS_WARNINGS
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
         CATCH_INTERNAL_STOP_WARNINGS_SUPPRESSION \
         void TestName::test()
     #define INTERNAL_CATCH_TEST_CASE_METHOD( ClassName, ... ) \
@@ -1768,6 +1918,9 @@ struct AutoReg : NonCopyable {
 
 #define INTERNAL_CATCH_TEMPLATE_LIST_TEST_CASE_METHOD(ClassName, Name, Tags, TmplList) \
         INTERNAL_CATCH_TEMPLATE_LIST_TEST_CASE_METHOD_2( INTERNAL_CATCH_UNIQUE_NAME( C_A_T_C_H_T_E_M_P_L_A_T_E_T_E_S_T_ ), INTERNAL_CATCH_UNIQUE_NAME( C_A_T_C_H_T_E_M_P_L_A_T_E_T_E_S_T_F_U_N_C_ ), ClassName, Name, Tags, TmplList )
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 // end catch_test_registry.h
@@ -1781,6 +1934,7 @@ struct AutoReg : NonCopyable {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	// ResultWas::OfType enum
 	struct ResultWas {
@@ -1825,6 +1979,8 @@ namespace Catch {
 	inline bool isFalseTest(int flags) { return (flags & ResultDisposition::FalseTest) != 0; }
 	bool shouldSuppressFailure(int flags);
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     // ResultWas::OfType enum
     struct ResultWas { enum OfType {
         Unknown = -1,
@@ -1863,6 +2019,9 @@ namespace Catch {
     bool shouldContinueOnFailure( int flags );
     inline bool isFalseTest( int flags ) { return ( flags & ResultDisposition::FalseTest ) != 0; }
     bool shouldSuppressFailure( int flags );
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -1870,6 +2029,7 @@ namespace Catch {
 // end catch_result_type.h
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	struct AssertionInfo
 	{
@@ -1883,6 +2043,8 @@ namespace Catch {
 		//AssertionInfo() = delete;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     struct AssertionInfo
     {
         StringRef macroName;
@@ -1894,6 +2056,9 @@ namespace Catch {
         // the struct is then treated as non-aggregate
         //AssertionInfo() = delete;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -1915,6 +2080,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	std::ostream& cout();
 	std::ostream& cerr();
@@ -1951,6 +2117,8 @@ namespace Catch {
 
 // end catch_stream.h
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     std::ostream& cout();
     std::ostream& cerr();
     std::ostream& clog();
@@ -2023,6 +2191,9 @@ namespace Catch {
 #ifdef CATCH_CONFIG_CPP17_STRING_VIEW
 #include <string_view>
 #endif
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 #ifdef __OBJC__
@@ -2037,6 +2208,7 @@ namespace Catch {
 #endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 void arcSafeRelease(NSObject* obj);
 id performOptionalSelector(id obj, SEL sel);
 
@@ -2049,6 +2221,8 @@ inline id performOptionalSelector(id obj, SEL sel) {
 		return[obj performSelector : sel];
 	return nil;
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 void arcSafeRelease( NSObject* obj );
 id performOptionalSelector( id obj, SEL sel );
 
@@ -2060,14 +2234,22 @@ inline id performOptionalSelector( id obj, SEL sel ) {
     if( [obj respondsToSelector: sel] )
         return [obj performSelector: sel];
     return nil;
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 #define CATCH_UNSAFE_UNRETAINED
 #define CATCH_ARC_STRONG
 #else
 <<<<<<< HEAD
+<<<<<<< HEAD
 inline void arcSafeRelease(NSObject*) {}
 inline id performOptionalSelector(id obj, SEL sel) {
+=======
+inline void arcSafeRelease( NSObject* ){}
+inline id performOptionalSelector( id obj, SEL sel ) {
+>>>>>>> 05a2e00 (Initial commit)
 =======
 inline void arcSafeRelease( NSObject* ){}
 inline id performOptionalSelector( id obj, SEL sel ) {
@@ -2077,6 +2259,7 @@ inline id performOptionalSelector( id obj, SEL sel ) {
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
 #endif
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if ([obj respondsToSelector : sel])
 		return[obj performSelector : sel];
 #ifdef __clang__
@@ -2084,12 +2267,17 @@ inline id performOptionalSelector( id obj, SEL sel ) {
 #endif
 	return nil;
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     if( [obj respondsToSelector: sel] )
         return [obj performSelector: sel];
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
     return nil;
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 #define CATCH_UNSAFE_UNRETAINED __unsafe_unretained
@@ -2104,6 +2292,7 @@ inline id performOptionalSelector( id obj, SEL sel ) {
 #pragma warning(disable:4180) // We attempt to stream a function (address) by const&, which MSVC complains about but is harmless
 #endif
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // We need a dummy global operator<< so we can bring it into Catch namespace later
 struct Catch_global_namespace_dummy {};
@@ -2394,6 +2583,8 @@ namespace Catch {
 
 	} // namespace Detail
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace Catch {
     namespace Detail {
 
@@ -2707,6 +2898,9 @@ namespace Catch {
         }
 
     } // namespace Detail
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #endif // __OBJC__
 
@@ -2720,7 +2914,13 @@ namespace Catch {
 #  define CATCH_CONFIG_ENABLE_PAIR_STRINGMAKER
 #  define CATCH_CONFIG_ENABLE_TUPLE_STRINGMAKER
 <<<<<<< HEAD
+<<<<<<< HEAD
 #  define CATCH_CONFIG_ENABLE_CHRONO_STRINGMAKER
+=======
+#  define CATCH_CONFIG_ENABLE_VARIANT_STRINGMAKER
+#  define CATCH_CONFIG_ENABLE_CHRONO_STRINGMAKER
+#  define CATCH_CONFIG_ENABLE_OPTIONAL_STRINGMAKER
+>>>>>>> 05a2e00 (Initial commit)
 =======
 #  define CATCH_CONFIG_ENABLE_VARIANT_STRINGMAKER
 #  define CATCH_CONFIG_ENABLE_CHRONO_STRINGMAKER
@@ -2732,6 +2932,7 @@ namespace Catch {
 #if defined(CATCH_CONFIG_ENABLE_PAIR_STRINGMAKER)
 #include <utility>
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	template<typename T1, typename T2>
 	struct StringMaker<std::pair<T1, T2> > {
@@ -2749,6 +2950,8 @@ namespace Catch {
 #endif // CATCH_CONFIG_ENABLE_PAIR_STRINGMAKER
 
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     template<typename T1, typename T2>
     struct StringMaker<std::pair<T1, T2> > {
         static std::string convert(const std::pair<T1, T2>& pair) {
@@ -2782,11 +2985,15 @@ namespace Catch {
 }
 #endif // CATCH_CONFIG_ENABLE_OPTIONAL_STRINGMAKER
 
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 // Separate std::tuple specialization
 #if defined(CATCH_CONFIG_ENABLE_TUPLE_STRINGMAKER)
 #include <tuple>
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	namespace Detail {
 		template<
@@ -2885,6 +3092,8 @@ namespace Catch {
 		}
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     namespace Detail {
         template<
             typename Tuple,
@@ -3016,6 +3225,9 @@ namespace Catch {
             return rangeToString(arr);
         }
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // namespace Catch
@@ -3028,6 +3240,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	template <class Ratio>
 	struct ratio_string {
@@ -3139,6 +3352,8 @@ namespace Catch {
 #endif // CATCH_CONFIG_ENABLE_CHRONO_STRINGMAKER
 
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 template <class Ratio>
 struct ratio_string {
     static std::string symbol();
@@ -3260,6 +3475,9 @@ namespace Catch { \
 
 #define CATCH_REGISTER_ENUM( enumName, ... ) INTERNAL_CATCH_REGISTER_ENUM( enumName, __VA_ARGS__ )
 
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #ifdef _MSC_VER
 #pragma warning(pop)
@@ -3275,6 +3493,10 @@ namespace Catch { \
 #pragma warning(disable:4312) // Converting int to T* using reinterpret_cast (issue on x64 platform)
 #pragma warning(disable:4180) // qualifier applied to function type has no meaning
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+#pragma warning(disable:4800) // Forcing result to true or false
+>>>>>>> 05a2e00 (Initial commit)
 =======
 #pragma warning(disable:4800) // Forcing result to true or false
 >>>>>>> 05a2e00 (Initial commit)
@@ -3282,6 +3504,7 @@ namespace Catch { \
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	struct ITransientExpression {
 		auto isBinaryExpression() const -> bool { return m_isBinaryExpression; }
@@ -3424,6 +3647,8 @@ namespace Catch {
 		}
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     struct ITransientExpression {
         auto isBinaryExpression() const -> bool { return m_isBinaryExpression; }
         auto getResult() const -> bool { return m_result; }
@@ -3646,6 +3871,9 @@ namespace Catch {
             return ExprLhs<bool>{ value };
         }
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -3658,6 +3886,7 @@ namespace Catch {
 // start catch_interfaces_capture.h
 
 #include <string>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 namespace Catch {
@@ -3725,6 +3954,8 @@ namespace Catch {
 
 	IResultCapture& getResultCapture();
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #include <chrono>
 
 namespace Catch {
@@ -3806,12 +4037,16 @@ namespace Catch {
     };
 
     IResultCapture& getResultCapture();
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 
 // end catch_interfaces_capture.h
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	struct TestFailureException {};
 	struct AssertionResultData;
@@ -3881,6 +4116,8 @@ namespace Catch {
 
 	void handleExceptionMatchExpr(AssertionHandler& handler, std::string const& str, StringRef matcherString);
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     struct TestFailureException{};
     struct AssertionResultData;
     struct IResultCapture;
@@ -3948,6 +4185,9 @@ namespace Catch {
     };
 
     void handleExceptionMatchExpr( AssertionHandler& handler, std::string const& str, StringRef const& matcherString );
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // namespace Catch
@@ -3956,6 +4196,7 @@ namespace Catch {
 // start catch_message.h
 
 #include <string>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 namespace Catch {
@@ -4010,6 +4251,8 @@ namespace Catch {
 		MessageInfo m_info;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #include <vector>
 
 namespace Catch {
@@ -4088,6 +4331,9 @@ namespace Catch {
             captureValues( index+1, values... );
         }
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -4097,6 +4343,7 @@ namespace Catch {
 
 #if !defined(CATCH_CONFIG_DISABLE_STRINGIFICATION)
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define CATCH_INTERNAL_STRINGIFY(...) #__VA_ARGS__
 #else
 #define CATCH_INTERNAL_STRINGIFY(...) "Disabled by CATCH_CONFIG_DISABLE_STRINGIFICATION"
@@ -4104,12 +4351,17 @@ namespace Catch {
 
 #if defined(CATCH_CONFIG_FAST_COMPILE)
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
   #define CATCH_INTERNAL_STRINGIFY(...) #__VA_ARGS__
 #else
   #define CATCH_INTERNAL_STRINGIFY(...) "Disabled by CATCH_CONFIG_DISABLE_STRINGIFICATION"
 #endif
 
 #if defined(CATCH_CONFIG_FAST_COMPILE) || defined(CATCH_CONFIG_DISABLE_EXCEPTIONS)
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -4131,6 +4383,7 @@ namespace Catch {
 #define INTERNAL_CATCH_TEST( macroName, resultDisposition, ... ) \
     do { \
 <<<<<<< HEAD
+<<<<<<< HEAD
         Catch::AssertionHandler catchAssertionHandler( macroName, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(__VA_ARGS__), resultDisposition ); \
         INTERNAL_CATCH_TRY { \
             CATCH_INTERNAL_SUPPRESS_PARENTHESES_WARNINGS \
@@ -4141,6 +4394,8 @@ namespace Catch {
     } while( (void)0, false && static_cast<bool>( !!(__VA_ARGS__) ) ) // the expression here is never evaluated at runtime but it forces the compiler to give it a look
 	// The double negation silences MSVC's C4800 warning, the static_cast forces short-circuit evaluation if the type has overloaded &&.
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
         CATCH_INTERNAL_IGNORE_BUT_WARN(__VA_ARGS__); \
         Catch::AssertionHandler catchAssertionHandler( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(__VA_ARGS__), resultDisposition ); \
         INTERNAL_CATCH_TRY { \
@@ -4151,6 +4406,9 @@ namespace Catch {
         } INTERNAL_CATCH_CATCH( catchAssertionHandler ) \
         INTERNAL_CATCH_REACT( catchAssertionHandler ) \
     } while( (void)0, (false) && static_cast<bool>( !!(__VA_ARGS__) ) )
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -4167,7 +4425,11 @@ namespace Catch {
 #define INTERNAL_CATCH_NO_THROW( macroName, resultDisposition, ... ) \
     do { \
 <<<<<<< HEAD
+<<<<<<< HEAD
         Catch::AssertionHandler catchAssertionHandler( macroName, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(__VA_ARGS__), resultDisposition ); \
+=======
+        Catch::AssertionHandler catchAssertionHandler( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(__VA_ARGS__), resultDisposition ); \
+>>>>>>> 05a2e00 (Initial commit)
 =======
         Catch::AssertionHandler catchAssertionHandler( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(__VA_ARGS__), resultDisposition ); \
 >>>>>>> 05a2e00 (Initial commit)
@@ -4185,7 +4447,11 @@ namespace Catch {
 #define INTERNAL_CATCH_THROWS( macroName, resultDisposition, ... ) \
     do { \
 <<<<<<< HEAD
+<<<<<<< HEAD
         Catch::AssertionHandler catchAssertionHandler( macroName, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(__VA_ARGS__), resultDisposition); \
+=======
+        Catch::AssertionHandler catchAssertionHandler( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(__VA_ARGS__), resultDisposition); \
+>>>>>>> 05a2e00 (Initial commit)
 =======
         Catch::AssertionHandler catchAssertionHandler( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(__VA_ARGS__), resultDisposition); \
 >>>>>>> 05a2e00 (Initial commit)
@@ -4206,7 +4472,11 @@ namespace Catch {
 #define INTERNAL_CATCH_THROWS_AS( macroName, exceptionType, resultDisposition, expr ) \
     do { \
 <<<<<<< HEAD
+<<<<<<< HEAD
         Catch::AssertionHandler catchAssertionHandler( macroName, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(expr) ", " CATCH_INTERNAL_STRINGIFY(exceptionType), resultDisposition ); \
+=======
+        Catch::AssertionHandler catchAssertionHandler( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(expr) ", " CATCH_INTERNAL_STRINGIFY(exceptionType), resultDisposition ); \
+>>>>>>> 05a2e00 (Initial commit)
 =======
         Catch::AssertionHandler catchAssertionHandler( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(expr) ", " CATCH_INTERNAL_STRINGIFY(exceptionType), resultDisposition ); \
 >>>>>>> 05a2e00 (Initial commit)
@@ -4230,7 +4500,11 @@ namespace Catch {
 #define INTERNAL_CATCH_MSG( macroName, messageType, resultDisposition, ... ) \
     do { \
 <<<<<<< HEAD
+<<<<<<< HEAD
         Catch::AssertionHandler catchAssertionHandler( macroName, CATCH_INTERNAL_LINEINFO, "", resultDisposition ); \
+=======
+        Catch::AssertionHandler catchAssertionHandler( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, Catch::StringRef(), resultDisposition ); \
+>>>>>>> 05a2e00 (Initial commit)
 =======
         Catch::AssertionHandler catchAssertionHandler( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, Catch::StringRef(), resultDisposition ); \
 >>>>>>> 05a2e00 (Initial commit)
@@ -4240,9 +4514,12 @@ namespace Catch {
 
 ///////////////////////////////////////////////////////////////////////////////
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define INTERNAL_CATCH_INFO( macroName, log ) \
     Catch::ScopedMessage INTERNAL_CATCH_UNIQUE_NAME( scopedMessage )( Catch::MessageBuilder( macroName, CATCH_INTERNAL_LINEINFO, Catch::ResultWas::Info ) << log );
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #define INTERNAL_CATCH_CAPTURE( varName, macroName, ... ) \
     auto varName = Catch::Capturer( macroName, CATCH_INTERNAL_LINEINFO, Catch::ResultWas::Info, #__VA_ARGS__ ); \
     varName.captureValues( 0, __VA_ARGS__ )
@@ -4254,6 +4531,9 @@ namespace Catch {
 ///////////////////////////////////////////////////////////////////////////////
 #define INTERNAL_CATCH_UNSCOPED_INFO( macroName, log ) \
     Catch::getResultCapture().emplaceUnscopedMessage( Catch::MessageBuilder( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, Catch::ResultWas::Info ) << log )
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -4261,7 +4541,11 @@ namespace Catch {
 #define INTERNAL_CATCH_THROWS_STR_MATCHES( macroName, resultDisposition, matcher, ... ) \
     do { \
 <<<<<<< HEAD
+<<<<<<< HEAD
         Catch::AssertionHandler catchAssertionHandler( macroName, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(__VA_ARGS__) ", " CATCH_INTERNAL_STRINGIFY(matcher), resultDisposition ); \
+=======
+        Catch::AssertionHandler catchAssertionHandler( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(__VA_ARGS__) ", " CATCH_INTERNAL_STRINGIFY(matcher), resultDisposition ); \
+>>>>>>> 05a2e00 (Initial commit)
 =======
         Catch::AssertionHandler catchAssertionHandler( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(__VA_ARGS__) ", " CATCH_INTERNAL_STRINGIFY(matcher), resultDisposition ); \
 >>>>>>> 05a2e00 (Initial commit)
@@ -4272,7 +4556,11 @@ namespace Catch {
             } \
             catch( ... ) { \
 <<<<<<< HEAD
+<<<<<<< HEAD
                 Catch::handleExceptionMatchExpr( catchAssertionHandler, matcher, #matcher ); \
+=======
+                Catch::handleExceptionMatchExpr( catchAssertionHandler, matcher, #matcher##_catch_sr ); \
+>>>>>>> 05a2e00 (Initial commit)
 =======
                 Catch::handleExceptionMatchExpr( catchAssertionHandler, matcher, #matcher##_catch_sr ); \
 >>>>>>> 05a2e00 (Initial commit)
@@ -4295,6 +4583,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	struct Counts {
 		Counts operator - (Counts const& other) const;
@@ -4321,6 +4610,8 @@ namespace Catch {
 		Counts testCases;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     struct Counts {
         Counts operator - ( Counts const& other ) const;
         Counts& operator += ( Counts const& other );
@@ -4345,6 +4636,9 @@ namespace Catch {
         Counts assertions;
         Counts testCases;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 
@@ -4353,6 +4647,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	struct SectionInfo {
 		SectionInfo
@@ -4373,6 +4668,8 @@ namespace Catch {
 		double durationInSeconds;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     struct SectionInfo {
         SectionInfo
             (   SourceLineInfo const& _lineInfo,
@@ -4394,6 +4691,9 @@ namespace Catch {
         Counts prevAssertions;
         double durationInSeconds;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -4405,6 +4705,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	auto getCurrentNanosecondsSinceEpoch()->uint64_t;
 	auto getEstimatedClockResolution()->uint64_t;
@@ -4419,6 +4720,8 @@ namespace Catch {
 		auto getElapsedSeconds() const -> double;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     auto getCurrentNanosecondsSinceEpoch() -> uint64_t;
     auto getEstimatedClockResolution() -> uint64_t;
 
@@ -4431,6 +4734,9 @@ namespace Catch {
         auto getElapsedMilliseconds() const -> unsigned int;
         auto getElapsedSeconds() const -> double;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // namespace Catch
@@ -4440,6 +4746,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	class Section : NonCopyable {
 	public:
@@ -4458,6 +4765,8 @@ namespace Catch {
 		Timer m_timer;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     class Section : NonCopyable {
     public:
         Section( SectionInfo const& info );
@@ -4474,11 +4783,15 @@ namespace Catch {
         bool m_sectionIncluded;
         Timer m_timer;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
 
 #define INTERNAL_CATCH_SECTION( ... ) \
+<<<<<<< HEAD
 <<<<<<< HEAD
         if( Catch::Section const& INTERNAL_CATCH_UNIQUE_NAME( catch_internal_Section ) = Catch::SectionInfo( CATCH_INTERNAL_LINEINFO, __VA_ARGS__ ) )
 
@@ -4530,6 +4843,8 @@ namespace Catch {
 
 // end catch_benchmark.h
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     CATCH_INTERNAL_START_WARNINGS_SUPPRESSION \
     CATCH_INTERNAL_SUPPRESS_UNUSED_WARNINGS \
     if( Catch::Section const& INTERNAL_CATCH_UNIQUE_NAME( catch_internal_Section ) = Catch::SectionInfo( CATCH_INTERNAL_LINEINFO, __VA_ARGS__ ) ) \
@@ -4542,6 +4857,9 @@ namespace Catch {
     CATCH_INTERNAL_STOP_WARNINGS_SUPPRESSION
 
 // end catch_section.h
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 // start catch_interfaces_exception.h
 
@@ -4552,6 +4870,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	class TestCase;
 	struct ITestCaseRegistry;
@@ -4591,6 +4910,8 @@ namespace Catch {
 	void cleanUp();
 	std::string translateActiveException();
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     class TestCase;
     struct ITestCaseRegistry;
     struct IExceptionTranslatorRegistry;
@@ -4630,6 +4951,9 @@ namespace Catch {
     IMutableRegistryHub& getMutableRegistryHub();
     void cleanUp();
     std::string translateActiveException();
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 }
@@ -4637,7 +4961,11 @@ namespace Catch {
 // end catch_interfaces_registry_hub.h
 #if defined(CATCH_CONFIG_DISABLE)
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define INTERNAL_CATCH_TRANSLATE_EXCEPTION_NO_REG( translatorName, signature) \
+=======
+    #define INTERNAL_CATCH_TRANSLATE_EXCEPTION_NO_REG( translatorName, signature) \
+>>>>>>> 05a2e00 (Initial commit)
 =======
     #define INTERNAL_CATCH_TRANSLATE_EXCEPTION_NO_REG( translatorName, signature) \
 >>>>>>> 05a2e00 (Initial commit)
@@ -4649,6 +4977,7 @@ namespace Catch {
 #include <vector>
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	using exceptionTranslateFunction = std::string(*)();
 
@@ -4699,6 +5028,8 @@ namespace Catch {
 		}
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     using exceptionTranslateFunction = std::string(*)();
 
     struct IExceptionTranslator;
@@ -4751,6 +5082,9 @@ namespace Catch {
                 ( new ExceptionTranslator<T>( translateFunction ) );
         }
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 
@@ -4758,14 +5092,20 @@ namespace Catch {
 #define INTERNAL_CATCH_TRANSLATE_EXCEPTION2( translatorName, signature ) \
     static std::string translatorName( signature ); \
 <<<<<<< HEAD
+<<<<<<< HEAD
     CATCH_INTERNAL_SUPPRESS_GLOBALS_WARNINGS \
     namespace{ Catch::ExceptionTranslatorRegistrar INTERNAL_CATCH_UNIQUE_NAME( catch_internal_ExceptionRegistrar )( &translatorName ); } \
     CATCH_INTERNAL_UNSUPPRESS_GLOBALS_WARNINGS \
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     CATCH_INTERNAL_START_WARNINGS_SUPPRESSION \
     CATCH_INTERNAL_SUPPRESS_GLOBALS_WARNINGS \
     namespace{ Catch::ExceptionTranslatorRegistrar INTERNAL_CATCH_UNIQUE_NAME( catch_internal_ExceptionRegistrar )( &translatorName ); } \
     CATCH_INTERNAL_STOP_WARNINGS_SUPPRESSION \
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
     static std::string translatorName( signature )
 
@@ -4775,6 +5115,7 @@ namespace Catch {
 // start catch_approx.h
 
 #include <type_traits>
+<<<<<<< HEAD
 <<<<<<< HEAD
 #include <stdexcept>
 
@@ -4892,6 +5233,8 @@ namespace Catch {
 		static std::string convert(Catch::Detail::Approx const& value);
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 
 namespace Catch {
 namespace Detail {
@@ -5006,6 +5349,9 @@ template<>
 struct StringMaker<Catch::Detail::Approx> {
     static std::string convert(Catch::Detail::Approx const& value);
 };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -5015,6 +5361,7 @@ struct StringMaker<Catch::Detail::Approx> {
 
 #include <string>
 #include <iosfwd>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 namespace Catch {
@@ -5038,6 +5385,8 @@ namespace Catch {
 		std::string m_label;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #include <vector>
 
 namespace Catch {
@@ -5066,6 +5415,9 @@ namespace Catch {
         std::size_t m_count;
         std::string m_label;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 
@@ -5079,6 +5431,7 @@ namespace Catch {
 #include <vector>
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	namespace Matchers {
 		namespace Impl {
@@ -5218,6 +5571,8 @@ namespace Catch {
 	using namespace Matchers;
 	using Matchers::Impl::MatcherBase;
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace Matchers {
     namespace Impl {
 
@@ -5371,11 +5726,15 @@ namespace Matchers {
 
 using namespace Matchers;
 using Matchers::Impl::MatcherBase;
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // namespace Catch
 
 // end catch_matchers.h
+<<<<<<< HEAD
 <<<<<<< HEAD
 // start catch_matchers_floating.h
 
@@ -5418,6 +5777,8 @@ namespace Catch {
 
 	} // namespace Matchers
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 // start catch_matchers_exception.hpp
 
 namespace Catch {
@@ -5503,6 +5864,9 @@ namespace Matchers {
     Floating::WithinRelMatcher WithinRel(float target);
 
 } // namespace Matchers
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 } // namespace Catch
 
@@ -5513,6 +5877,7 @@ namespace Matchers {
 #include <string>
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	namespace Matchers {
 		namespace Generic {
@@ -5554,6 +5919,8 @@ namespace Catch {
 
 	} // namespace Matchers
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace Matchers {
 namespace Generic {
 
@@ -5593,6 +5960,9 @@ public:
     }
 
 } // namespace Matchers
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 } // namespace Catch
 
@@ -5602,6 +5972,7 @@ public:
 #include <string>
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	namespace Matchers {
 
@@ -5665,6 +6036,8 @@ namespace Catch {
 
 	} // namespace Matchers
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace Matchers {
 
     namespace StdString {
@@ -5726,6 +6099,9 @@ namespace Matchers {
     StdString::RegexMatcher Matches( std::string const& regex, CaseSensitive::Choice caseSensitivity = CaseSensitive::Yes );
 
 } // namespace Matchers
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 } // namespace Catch
 
@@ -5735,6 +6111,7 @@ namespace Matchers {
 #include <algorithm>
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	namespace Matchers {
 
@@ -5902,6 +6279,8 @@ namespace Catch {
 
 	} // namespace Matchers
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace Matchers {
 
     namespace Vector {
@@ -6063,12 +6442,16 @@ namespace Matchers {
     }
 
 } // namespace Matchers
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 } // namespace Catch
 
 // end catch_matchers_vector.h
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	template<typename ArgT, typename MatcherT>
 	class MatchExpr : public ITransientExpression {
@@ -6102,6 +6485,8 @@ namespace Catch {
 		return MatchExpr<ArgT, MatcherT>(arg, matcher, matcherString);
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     template<typename ArgT, typename MatcherT>
     class MatchExpr : public ITransientExpression {
         ArgT const& m_arg;
@@ -6133,6 +6518,9 @@ namespace Catch {
     auto makeMatchExpr( ArgT const& arg, MatcherT const& matcher, StringRef const& matcherString  ) -> MatchExpr<ArgT, MatcherT> {
         return MatchExpr<ArgT, MatcherT>( arg, matcher, matcherString );
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // namespace Catch
@@ -6141,9 +6529,15 @@ namespace Catch {
 #define INTERNAL_CHECK_THAT( macroName, matcher, resultDisposition, arg ) \
     do { \
 <<<<<<< HEAD
+<<<<<<< HEAD
         Catch::AssertionHandler catchAssertionHandler( macroName, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(arg) ", " CATCH_INTERNAL_STRINGIFY(matcher), resultDisposition ); \
         INTERNAL_CATCH_TRY { \
             catchAssertionHandler.handleExpr( Catch::makeMatchExpr( arg, matcher, #matcher ) ); \
+=======
+        Catch::AssertionHandler catchAssertionHandler( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(arg) ", " CATCH_INTERNAL_STRINGIFY(matcher), resultDisposition ); \
+        INTERNAL_CATCH_TRY { \
+            catchAssertionHandler.handleExpr( Catch::makeMatchExpr( arg, matcher, #matcher##_catch_sr ) ); \
+>>>>>>> 05a2e00 (Initial commit)
 =======
         Catch::AssertionHandler catchAssertionHandler( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(arg) ", " CATCH_INTERNAL_STRINGIFY(matcher), resultDisposition ); \
         INTERNAL_CATCH_TRY { \
@@ -6157,7 +6551,11 @@ namespace Catch {
 #define INTERNAL_CATCH_THROWS_MATCHES( macroName, exceptionType, resultDisposition, matcher, ... ) \
     do { \
 <<<<<<< HEAD
+<<<<<<< HEAD
         Catch::AssertionHandler catchAssertionHandler( macroName, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(__VA_ARGS__) ", " CATCH_INTERNAL_STRINGIFY(exceptionType) ", " CATCH_INTERNAL_STRINGIFY(matcher), resultDisposition ); \
+=======
+        Catch::AssertionHandler catchAssertionHandler( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(__VA_ARGS__) ", " CATCH_INTERNAL_STRINGIFY(exceptionType) ", " CATCH_INTERNAL_STRINGIFY(matcher), resultDisposition ); \
+>>>>>>> 05a2e00 (Initial commit)
 =======
         Catch::AssertionHandler catchAssertionHandler( macroName##_catch_sr, CATCH_INTERNAL_LINEINFO, CATCH_INTERNAL_STRINGIFY(__VA_ARGS__) ", " CATCH_INTERNAL_STRINGIFY(exceptionType) ", " CATCH_INTERNAL_STRINGIFY(matcher), resultDisposition ); \
 >>>>>>> 05a2e00 (Initial commit)
@@ -6168,7 +6566,11 @@ namespace Catch {
             } \
             catch( exceptionType const& ex ) { \
 <<<<<<< HEAD
+<<<<<<< HEAD
                 catchAssertionHandler.handleExpr( Catch::makeMatchExpr( ex, matcher, #matcher ) ); \
+=======
+                catchAssertionHandler.handleExpr( Catch::makeMatchExpr( ex, matcher, #matcher##_catch_sr ) ); \
+>>>>>>> 05a2e00 (Initial commit)
 =======
                 catchAssertionHandler.handleExpr( Catch::makeMatchExpr( ex, matcher, #matcher##_catch_sr ) ); \
 >>>>>>> 05a2e00 (Initial commit)
@@ -6184,7 +6586,10 @@ namespace Catch {
 // end catch_capture_matchers.h
 #endif
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 // start catch_generators.hpp
 
 // start catch_interfaces_generatortracker.h
@@ -7104,6 +7509,9 @@ GeneratorWrapper<ResultType> from_range(Container const& cnt) {
 } // namespace Catch
 
 // end catch_generators_specific.hpp
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 // These files are included here so the single_include script doesn't put them
@@ -7121,6 +7529,7 @@ GeneratorWrapper<ResultType> from_range(Container const& cnt) {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	struct ITestInvoker;
 
@@ -7182,6 +7591,8 @@ namespace Catch {
 		NameAndTags const& nameAndTags,
 		SourceLineInfo const& lineInfo);
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     struct ITestInvoker;
 
     struct TestCaseInfo {
@@ -7241,6 +7652,9 @@ namespace Catch {
                             std::string const& className,
                             NameAndTags const& nameAndTags,
                             SourceLineInfo const& lineInfo );
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 
@@ -7254,15 +7668,21 @@ namespace Catch {
 namespace Catch {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	struct IRunner {
 		virtual ~IRunner();
 		virtual bool aborting() const = 0;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     struct IRunner {
         virtual ~IRunner();
         virtual bool aborting() const = 0;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 
@@ -7287,8 +7707,13 @@ namespace Catch {
 @optional
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - (void)setUp;
 -(void)tearDown;
+=======
+-(void) setUp;
+-(void) tearDown;
+>>>>>>> 05a2e00 (Initial commit)
 =======
 -(void) setUp;
 -(void) tearDown;
@@ -7298,6 +7723,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	class OcMethod : public ITestInvoker {
 
@@ -7456,6 +7882,8 @@ namespace Catch {
 
 	using namespace Matchers;
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     class OcMethod : public ITestInvoker {
 
     public:
@@ -7612,6 +8040,9 @@ namespace Catch {
     } // namespace Matchers
 
     using namespace Matchers;
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 #endif // CATCH_CONFIG_DISABLE_MATCHERS
@@ -7637,7 +8068,12 @@ return @ desc; \
 #endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #ifdef CATCH_CONFIG_EXTERNAL_INTERFACES
+=======
+// Benchmarking needs the externally-facing parts of reporters to work
+#if defined(CATCH_CONFIG_EXTERNAL_INTERFACES) || defined(CATCH_CONFIG_ENABLE_BENCHMARKING)
+>>>>>>> 05a2e00 (Initial commit)
 =======
 // Benchmarking needs the externally-facing parts of reporters to work
 #if defined(CATCH_CONFIG_EXTERNAL_INTERFACES) || defined(CATCH_CONFIG_ENABLE_BENCHMARKING)
@@ -7669,6 +8105,7 @@ return @ desc; \
 namespace Catch
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	class WildcardPattern {
 		enum WildcardPosition {
 			NoWildcard = 0,
@@ -7690,6 +8127,8 @@ namespace Catch
 		std::string m_pattern;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     class WildcardPattern {
         enum WildcardPosition {
             NoWildcard = 0,
@@ -7710,6 +8149,9 @@ namespace Catch
         WildcardPosition m_wildcard = NoWildcard;
         std::string m_pattern;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 
@@ -7720,6 +8162,7 @@ namespace Catch
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	class TestSpec {
 		struct Pattern {
@@ -7771,6 +8214,8 @@ namespace Catch {
 		friend class TestSpecParser;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     struct IConfig;
 
     class TestSpec {
@@ -7834,6 +8279,9 @@ namespace Catch {
         std::vector<std::string> m_invalidArgs;
         friend class TestSpecParser;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 
@@ -7849,6 +8297,7 @@ namespace Catch {
 namespace Catch {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	struct TagAlias;
 
 	struct ITagAliasRegistry {
@@ -7860,6 +8309,8 @@ namespace Catch {
 		static ITagAliasRegistry const& get();
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     struct TagAlias;
 
     struct ITagAliasRegistry {
@@ -7870,6 +8321,9 @@ namespace Catch {
 
         static ITagAliasRegistry const& get();
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -7877,6 +8331,7 @@ namespace Catch {
 // end catch_interfaces_tag_alias_registry.h
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	class TestSpecParser {
 		enum Mode { None, Name, QuotedName, Tag, EscapedName };
@@ -7925,6 +8380,8 @@ namespace Catch {
 	};
 	TestSpec parseTestSpec(std::string const& arg);
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     class TestSpecParser {
         enum Mode{ None, Name, QuotedName, Tag, EscapedName };
         Mode m_mode = None;
@@ -7975,6 +8432,9 @@ namespace Catch {
 
     };
     TestSpec parseTestSpec( std::string const& arg );
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // namespace Catch
@@ -7984,6 +8444,7 @@ namespace Catch {
 #endif
 
 // end catch_test_spec_parser.h
+<<<<<<< HEAD
 <<<<<<< HEAD
 // start catch_interfaces_config.h
 
@@ -8070,6 +8531,8 @@ namespace Catch {
 // end catch_interfaces_config.h
 =======
 >>>>>>> 05a2e00 (Initial commit)
+=======
+>>>>>>> 05a2e00 (Initial commit)
 // Libstdc++ doesn't like incomplete classes for unique_ptr
 
 #include <memory>
@@ -8082,6 +8545,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	struct IStream;
 
@@ -8171,6 +8635,8 @@ namespace Catch {
 		bool m_hasTestFilters = false;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     struct IStream;
 
     struct ConfigData {
@@ -8273,6 +8739,9 @@ namespace Catch {
         TestSpec m_testSpec;
         bool m_hasTestFilters = false;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -8284,6 +8753,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	struct AssertionResultData
 	{
@@ -8322,6 +8792,8 @@ namespace Catch {
 		AssertionResultData m_resultData;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     struct AssertionResultData
     {
         AssertionResultData() = delete;
@@ -8358,11 +8830,15 @@ namespace Catch {
         AssertionInfo m_info;
         AssertionResultData m_resultData;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
 
 // end catch_assertionresult.h
+<<<<<<< HEAD
 <<<<<<< HEAD
 // start catch_option.hpp
 
@@ -8430,6 +8906,8 @@ namespace Catch {
 
 // end catch_option.hpp
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #if defined(CATCH_CONFIG_ENABLE_BENCHMARKING)
 // start catch_estimate.hpp
 
@@ -8479,12 +8957,16 @@ namespace Catch {
 #include <iterator>
 #endif // CATCH_CONFIG_ENABLE_BENCHMARKING
 
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #include <string>
 #include <iosfwd>
 #include <map>
 #include <set>
 #include <memory>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 namespace Catch {
@@ -8690,6 +9172,8 @@ namespace Catch {
 
 	void addReporter(IStreamingReporterPtr& existingReporter, IStreamingReporterPtr&& additionalReporter);
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #include <algorithm>
 
 namespace Catch {
@@ -8925,6 +9409,9 @@ namespace Catch {
         virtual FactoryMap const& getFactories() const = 0;
         virtual Listeners const& getListeners() const = 0;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -8935,7 +9422,11 @@ namespace Catch {
 #include <cfloat>
 #include <cstdio>
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include <assert.h>
+=======
+#include <cassert>
+>>>>>>> 05a2e00 (Initial commit)
 =======
 #include <cassert>
 >>>>>>> 05a2e00 (Initial commit)
@@ -8943,6 +9434,7 @@ namespace Catch {
 #include <ostream>
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	void prepareExpandedExpression(AssertionResult& result);
 
@@ -9192,6 +9684,8 @@ namespace Catch {
 		bool assertionEnded(AssertionStats const&) override;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     void prepareExpandedExpression(AssertionResult& result);
 
     // Returns double formatted as %.3f (format expected on output)
@@ -9449,6 +9943,9 @@ namespace Catch {
         void assertionStarting(AssertionInfo const&) override;
         bool assertionEnded(AssertionStats const&) override;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -9458,6 +9955,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	struct Colour {
 		enum Code {
@@ -9511,6 +10009,8 @@ namespace Catch {
 
 	std::ostream& operator << (std::ostream& os, Colour const&);
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     struct Colour {
         enum Code {
             None = 0,
@@ -9562,6 +10062,9 @@ namespace Catch {
     };
 
     std::ostream& operator << ( std::ostream& os, Colour const& );
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -9572,6 +10075,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	template<typename T>
 	class ReporterRegistrar {
@@ -9614,6 +10118,8 @@ namespace Catch {
 		}
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     template<typename T>
     class ReporterRegistrar {
 
@@ -9654,12 +10160,16 @@ namespace Catch {
             getMutableRegistryHub().registerListener( std::make_shared<ListenerFactory>() );
         }
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 
 #if !defined(CATCH_CONFIG_DISABLE)
 
 #define CATCH_REGISTER_REPORTER( name, reporterType ) \
+<<<<<<< HEAD
 <<<<<<< HEAD
     CATCH_INTERNAL_SUPPRESS_GLOBALS_WARNINGS          \
     namespace{ Catch::ReporterRegistrar<reporterType> catch_internal_RegistrarFor##reporterType( name ); } \
@@ -9670,6 +10180,8 @@ namespace Catch {
      namespace{ Catch::ListenerRegistrar<listenerType> catch_internal_RegistrarFor##listenerType; } \
      CATCH_INTERNAL_SUPPRESS_GLOBALS_WARNINGS
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     CATCH_INTERNAL_START_WARNINGS_SUPPRESSION         \
     CATCH_INTERNAL_SUPPRESS_GLOBALS_WARNINGS          \
     namespace{ Catch::ReporterRegistrar<reporterType> catch_internal_RegistrarFor##reporterType( name ); } \
@@ -9680,6 +10192,9 @@ namespace Catch {
     CATCH_INTERNAL_SUPPRESS_GLOBALS_WARNINGS    \
     namespace{ Catch::ListenerRegistrar<listenerType> catch_internal_RegistrarFor##listenerType; } \
     CATCH_INTERNAL_STOP_WARNINGS_SUPPRESSION
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #else // CATCH_CONFIG_DISABLE
 
@@ -9694,6 +10209,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	struct CompactReporter : StreamingReporterBase<CompactReporter> {
 
@@ -9717,6 +10233,8 @@ namespace Catch {
 
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     struct CompactReporter : StreamingReporterBase<CompactReporter> {
 
         using StreamingReporterBase::StreamingReporterBase;
@@ -9736,6 +10254,9 @@ namespace Catch {
         void testRunEnded(TestRunStats const& _testRunStats) override;
 
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -9746,6 +10267,7 @@ namespace Catch {
 #if defined(_MSC_VER)
 #pragma warning(push)
 #pragma warning(disable:4061) // Not all labels are EXPLICITLY handled in switch
+<<<<<<< HEAD
 <<<<<<< HEAD
 							  // Note that 4062 (not all labels are handled
 							  // and default is missing) is enabled
@@ -9805,6 +10327,8 @@ namespace Catch {
 		bool m_headerPrinted = false;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
                               // Note that 4062 (not all labels are handled
                               // and default is missing) is enabled
 #endif
@@ -9869,6 +10393,9 @@ namespace Catch {
     private:
         bool m_headerPrinted = false;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -9885,6 +10412,7 @@ namespace Catch {
 #include <vector>
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 	class XmlEncode {
@@ -9972,6 +10500,8 @@ namespace Catch {
 		std::ostream& m_os;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     enum class XmlFormatting {
         None = 0x00,
         Indent = 0x01,
@@ -10068,6 +10598,9 @@ namespace Catch {
         std::string m_indent;
         std::ostream& m_os;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 }
@@ -10075,6 +10608,7 @@ namespace Catch {
 // end catch_xmlwriter.h
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	class JunitReporter : public CumulativeReporterBase<JunitReporter> {
 	public:
@@ -10118,6 +10652,8 @@ namespace Catch {
 		bool m_okToFail = false;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     class JunitReporter : public CumulativeReporterBase<JunitReporter> {
     public:
         JunitReporter(ReporterConfig const& _config);
@@ -10160,6 +10696,9 @@ namespace Catch {
         unsigned int unexpectedExceptions = 0;
         bool m_okToFail = false;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -10168,6 +10707,7 @@ namespace Catch {
 // start catch_reporter_xml.h
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	class XmlReporter : public StreamingReporterBase<XmlReporter> {
 	public:
@@ -10211,6 +10751,8 @@ namespace Catch {
 		int m_sectionDepth = 0;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     class XmlReporter : public StreamingReporterBase<XmlReporter> {
     public:
         XmlReporter(ReporterConfig const& _config);
@@ -10259,6 +10801,9 @@ namespace Catch {
         XmlWriter m_xml;
         int m_sectionDepth = 0;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -10269,7 +10814,10 @@ namespace Catch {
 #endif
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #if defined(CATCH_CONFIG_ENABLE_BENCHMARKING)
 // start catch_benchmarking_all.hpp
 
@@ -11296,6 +11844,9 @@ namespace Catch {
 // end catch_benchmarking_all.hpp
 #endif
 
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #endif // ! CATCH_CONFIG_IMPL_ONLY
 
@@ -11315,6 +11866,7 @@ namespace Catch {
 #include <memory>
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	namespace TestCaseTracking {
 
@@ -11477,6 +12029,8 @@ namespace Catch {
 	using TestCaseTracking::SectionTracker;
 	using TestCaseTracking::IndexTracker;
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace TestCaseTracking {
 
     struct NameAndLocation {
@@ -11633,6 +12187,9 @@ namespace TestCaseTracking {
 using TestCaseTracking::ITracker;
 using TestCaseTracking::TrackerContext;
 using TestCaseTracking::SectionTracker;
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // namespace Catch
@@ -11644,21 +12201,30 @@ using TestCaseTracking::SectionTracker;
 namespace Catch {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	struct LeakDetector {
 		LeakDetector();
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     struct LeakDetector {
         LeakDetector();
         ~LeakDetector();
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 }
 // end catch_leak_detector.h
 // Cpp files will be included in the single-header file here
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 // start catch_stats.cpp
 
 // Statistical analysis tools
@@ -11870,6 +12436,9 @@ namespace Catch {
 
 #endif // CATCH_CONFIG_ENABLE_BENCHMARKING
 // end catch_stats.cpp
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 // start catch_approx.cpp
 
@@ -11879,22 +12448,29 @@ namespace Catch {
 namespace {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	// Performs equivalent check of std::fabs(lhs - rhs) <= margin
 	// But without the subtraction to allow for INFINITY in comparison
 	bool marginComparison(double lhs, double rhs, double margin) {
 		return (lhs + margin >= rhs) && (rhs + margin >= lhs);
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 // Performs equivalent check of std::fabs(lhs - rhs) <= margin
 // But without the subtraction to allow for INFINITY in comparison
 bool marginComparison(double lhs, double rhs, double margin) {
     return (lhs + margin >= rhs) && (rhs + margin >= lhs);
 }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 }
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	namespace Detail {
 
@@ -11927,6 +12503,8 @@ namespace Catch {
 		return value.toString();
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace Detail {
 
     Approx::Approx ( double value )
@@ -11987,12 +12565,16 @@ namespace literals {
 std::string StringMaker<Catch::Detail::Approx>::convert(Catch::Detail::Approx const& value) {
     return value.toString();
 }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
 // end catch_approx.cpp
 // start catch_assertionhandler.cpp
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // start catch_context.h
 
@@ -12051,15 +12633,21 @@ namespace Catch {
 namespace Catch {
 	bool isDebuggerActive();
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 // start catch_debugger.h
 
 namespace Catch {
     bool isDebuggerActive();
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 
 #ifdef CATCH_PLATFORM_MAC
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #define CATCH_TRAP() __asm__("int $3\n" : : ) /* NOLINT */
 
@@ -12089,6 +12677,8 @@ namespace Catch {
 }
 #define CATCH_BREAK_INTO_DEBUGGER() Catch::doNothing()
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     #if defined(__i386__) || defined(__x86_64__)
         #define CATCH_TRAP() __asm__("int $3\n" : : ) /* NOLINT */
     #elif defined(__aarch64__)
@@ -12132,6 +12722,9 @@ namespace Catch {
     #else
         #define CATCH_BREAK_INTO_DEBUGGER() []{}()
     #endif
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #endif
 
@@ -12140,6 +12733,7 @@ namespace Catch {
 
 // start catch_fatal_condition.h
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // start catch_windows_h_proxy.h
 
@@ -12222,6 +12816,8 @@ namespace Catch {
 
 #endif
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #include <cassert>
 
 namespace Catch {
@@ -12274,6 +12870,9 @@ namespace Catch {
     };
 
 } // end namespace Catch
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 // end catch_fatal_condition.h
@@ -12281,6 +12880,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	struct IMutableContext;
 
@@ -12398,6 +12998,8 @@ namespace Catch {
 	};
 
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     struct IMutableContext;
 
     ///////////////////////////////////////////////////////////////////////////
@@ -12525,12 +13127,16 @@ namespace Catch {
 
     void seedRng(IConfig const& config);
     unsigned int rngSeed();
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 } // end namespace Catch
 
 // end catch_run_context.h
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	auto operator <<(std::ostream& os, ITransientExpression const& expr) -> std::ostream& {
 		expr.streamReconstructedExpression(os);
@@ -12625,6 +13231,8 @@ namespace Catch {
 		handleExceptionMatchExpr(handler, Matchers::Equals(str), matcherString);
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     namespace {
         auto operator <<( std::ostream& os, ITransientExpression const& expr ) -> std::ostream& {
             expr.streamReconstructedExpression( os );
@@ -12724,6 +13332,9 @@ namespace Catch {
     void handleExceptionMatchExpr( AssertionHandler& handler, std::string const& str, StringRef const& matcherString  ) {
         handleExceptionMatchExpr( handler, Matchers::Equals( str ), matcherString );
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // namespace Catch
@@ -12731,6 +13342,7 @@ namespace Catch {
 // start catch_assertionresult.cpp
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	AssertionResultData::AssertionResultData(ResultWas::OfType _resultType, LazyExpression const & _lazyExpression) :
 		lazyExpression(_lazyExpression),
@@ -12847,6 +13459,8 @@ namespace Catch {
 } // end namespace Catch
 // end catch_benchmark.cpp
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     AssertionResultData::AssertionResultData(ResultWas::OfType _resultType, LazyExpression const & _lazyExpression):
         lazyExpression(_lazyExpression),
         resultType(_resultType) {}
@@ -12941,11 +13555,15 @@ namespace Catch {
 
 } // end namespace Catch
 // end catch_assertionresult.cpp
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 // start catch_capture_matchers.cpp
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	using StringMatcher = Matchers::Impl::MatcherBase<std::string>;
 
@@ -12958,6 +13576,8 @@ namespace Catch {
 		handler.handleExpr(expr);
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     using StringMatcher = Matchers::Impl::MatcherBase<std::string>;
 
     // This is the general overload that takes a any string matcher
@@ -12968,6 +13588,9 @@ namespace Catch {
         MatchExpr<std::string, StringMatcher const&> expr( exceptionMessage, matcher, matcherString );
         handler.handleExpr( expr );
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // namespace Catch
@@ -13001,7 +13624,11 @@ namespace Catch {
 // See https://github.com/philsquared/Clara for more details
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Clara v1.1.4
+=======
+// Clara v1.1.5
+>>>>>>> 05a2e00 (Initial commit)
 =======
 // Clara v1.1.5
 >>>>>>> 05a2e00 (Initial commit)
@@ -13031,8 +13658,13 @@ namespace Catch {
 // A single-header library for wrapping and laying out basic text, by Phil Nash
 //
 <<<<<<< HEAD
+<<<<<<< HEAD
 // This work is licensed under the BSD 2-Clause license.
 // See the accompanying LICENSE file, or the one at https://opensource.org/licenses/BSD-2-Clause
+=======
+// Distributed under the Boost Software License, Version 1.0. (See accompanying
+// file LICENSE.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
+>>>>>>> 05a2e00 (Initial commit)
 =======
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
 // file LICENSE.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -13051,6 +13683,7 @@ namespace Catch {
 #endif
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	namespace clara {
 		namespace TextFlow {
@@ -13361,6 +13994,8 @@ namespace Catch {
 	}
 } // namespace Catch::clara::TextFlow
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace clara {
 namespace TextFlow {
 
@@ -13676,12 +14311,20 @@ inline auto Column::operator + (Column const& other) -> Columns {
 
 }
 }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 // ----------- end of #include from clara_textflow.hpp -----------
 // ........... back in clara.hpp
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+#include <cctype>
+#include <string>
+>>>>>>> 05a2e00 (Initial commit)
 =======
 #include <cctype>
 #include <string>
@@ -13694,6 +14337,7 @@ inline auto Column::operator + (Column const& other) -> Columns {
 #define CATCH_PLATFORM_WINDOWS
 #endif
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 namespace Catch {
 	namespace clara {
@@ -14578,6 +15222,8 @@ namespace Catch {
 	}
 } // namespace Catch::clara
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace Catch { namespace clara {
 namespace detail {
 
@@ -15453,6 +16099,9 @@ using detail::ParseResultType;
 using detail::ParserResult;
 
 }} // namespace Catch::clara
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 // end clara.hpp
@@ -15470,7 +16119,11 @@ using detail::ParserResult;
 namespace Catch {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	clara::Parser makeCommandLineParser(ConfigData& config);
+=======
+    clara::Parser makeCommandLineParser( ConfigData& config );
+>>>>>>> 05a2e00 (Initial commit)
 =======
     clara::Parser makeCommandLineParser( ConfigData& config );
 >>>>>>> 05a2e00 (Initial commit)
@@ -15483,6 +16136,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	clara::Parser makeCommandLineParser(ConfigData& config) {
 
@@ -15660,6 +16314,8 @@ namespace Catch {
 		return cli;
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     clara::Parser makeCommandLineParser( ConfigData& config ) {
 
         using namespace clara;
@@ -15868,6 +16524,9 @@ namespace Catch {
 
         return cli;
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -15879,6 +16538,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	bool SourceLineInfo::empty() const noexcept {
 		return file[0] == '\0';
@@ -15906,6 +16566,8 @@ namespace Catch {
 	NonCopyable::NonCopyable() = default;
 	NonCopyable::~NonCopyable() = default;
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     bool SourceLineInfo::operator == ( SourceLineInfo const& other ) const noexcept {
         return line == other.line && (file == other.file || std::strcmp(file, other.file) == 0);
     }
@@ -15930,12 +16592,16 @@ namespace Catch {
 
     NonCopyable::NonCopyable() = default;
     NonCopyable::~NonCopyable() = default;
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 }
 // end catch_common.cpp
 // start catch_config.cpp
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // start catch_enforce.h
 
@@ -16010,6 +16676,8 @@ namespace Catch {
 		return Catch::makeStream(m_data.outputFilename);
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace Catch {
 
     Config::Config( ConfigData const& data )
@@ -16083,6 +16751,9 @@ namespace Catch {
     IStream const* Config::openStream() {
         return Catch::makeStream(m_data.outputFilename);
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -16099,6 +16770,7 @@ namespace Catch {
 namespace Catch {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	class ErrnoGuard {
 	public:
 		ErrnoGuard();
@@ -16107,6 +16779,8 @@ namespace Catch {
 		int m_oldErrno;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     class ErrnoGuard {
     public:
         ErrnoGuard();
@@ -16114,11 +16788,15 @@ namespace Catch {
     private:
         int m_oldErrno;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 }
 
 // end catch_errno_guard.h
+<<<<<<< HEAD
 <<<<<<< HEAD
 #include <sstream>
 
@@ -16141,6 +16819,8 @@ namespace Catch {
 
 	} // anon namespace
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 // start catch_windows_h_proxy.h
 
 
@@ -16191,6 +16871,9 @@ namespace Catch {
         };
 
     } // anon namespace
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 } // namespace Catch
 
@@ -16205,6 +16888,7 @@ namespace Catch {
 #if defined ( CATCH_CONFIG_COLOUR_WINDOWS ) /////////////////////////////////////////
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	namespace {
 
@@ -16267,6 +16951,8 @@ namespace Catch {
 
 	} // end anon namespace
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace {
 
     class Win32ColourImpl : public IColourImpl {
@@ -16327,6 +17013,9 @@ namespace {
     }
 
 } // end anon namespace
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 } // end namespace Catch
 
@@ -16335,6 +17024,7 @@ namespace {
 #include <unistd.h>
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	namespace {
 
@@ -16405,6 +17095,8 @@ namespace Catch {
 
 	} // end anon namespace
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace {
 
     // use POSIX/ ANSI console terminal codes
@@ -16474,6 +17166,9 @@ namespace {
     }
 
 } // end anon namespace
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 } // end namespace Catch
 
@@ -16482,7 +17177,11 @@ namespace {
 namespace Catch {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	static IColourImpl* platformColourInstance() { return NoColourImpl::instance(); }
+=======
+    static IColourImpl* platformColourInstance() { return NoColourImpl::instance(); }
+>>>>>>> 05a2e00 (Initial commit)
 =======
     static IColourImpl* platformColourInstance() { return NoColourImpl::instance(); }
 >>>>>>> 05a2e00 (Initial commit)
@@ -16493,6 +17192,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	Colour::Colour(Code _colourCode) { use(_colourCode); }
 	Colour::Colour(Colour&& rhs) noexcept {
@@ -16516,6 +17216,8 @@ namespace Catch {
 		return os;
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     Colour::Colour( Code _colourCode ) { use( _colourCode ); }
     Colour::Colour( Colour&& other ) noexcept {
         m_moved = other.m_moved;
@@ -16543,6 +17245,9 @@ namespace Catch {
     std::ostream& operator << ( std::ostream& os, Colour const& ) {
         return os;
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -16556,6 +17261,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	class Context : public IMutableContext, NonCopyable {
 
@@ -16607,6 +17313,8 @@ namespace Catch {
 	IMutableContext::~IMutableContext() = default;
 	Context::~Context() = default;
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     class Context : public IMutableContext, NonCopyable {
 
     public: // IContext
@@ -16662,6 +17370,9 @@ namespace Catch {
         return s_rng;
     }
 
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 // end catch_context.cpp
@@ -16672,6 +17383,7 @@ namespace Catch {
 #include <string>
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	void writeToDebugConsole(std::string const& text);
 }
@@ -16694,6 +17406,8 @@ namespace Catch {
 	}
 }
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     void writeToDebugConsole( std::string const& text );
 }
 
@@ -16723,12 +17437,16 @@ namespace Catch {
             Catch::cout() << text;
         }
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 #endif // Platform
 // end catch_debug_console.cpp
 // start catch_debugger.cpp
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #ifdef CATCH_PLATFORM_MAC
 
@@ -16829,6 +17547,8 @@ namespace Catch {
 	bool isDebuggerActive() { return false; }
 }
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #if defined(CATCH_PLATFORM_MAC) || defined(CATCH_PLATFORM_IPHONE)
 
 #  include <cassert>
@@ -16936,6 +17656,9 @@ namespace Catch {
     namespace Catch {
        bool isDebuggerActive() { return false; }
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #endif // Platform
 // end catch_debugger.cpp
@@ -16943,6 +17666,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	ITransientExpression::~ITransientExpression() = default;
 
@@ -16957,6 +17681,8 @@ namespace Catch {
 }
 // end catch_decomposer.cpp
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     ITransientExpression::~ITransientExpression() = default;
 
     void formatReconstructedExpression( std::ostream &os, std::string const& lhs, StringRef op, std::string const& rhs ) {
@@ -17092,6 +17818,9 @@ namespace Catch {
 } // Catch
 
 // end catch_enum_values_registry.cpp
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 // start catch_errno_guard.cpp
 
@@ -17099,8 +17828,13 @@ namespace Catch {
 
 namespace Catch {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	ErrnoGuard::ErrnoGuard() :m_oldErrno(errno) {}
 	ErrnoGuard::~ErrnoGuard() { errno = m_oldErrno; }
+=======
+        ErrnoGuard::ErrnoGuard():m_oldErrno(errno){}
+        ErrnoGuard::~ErrnoGuard() { errno = m_oldErrno; }
+>>>>>>> 05a2e00 (Initial commit)
 =======
         ErrnoGuard::ErrnoGuard():m_oldErrno(errno){}
         ErrnoGuard::~ErrnoGuard() { errno = m_oldErrno; }
@@ -17118,6 +17852,7 @@ namespace Catch {
 namespace Catch {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	class ExceptionTranslatorRegistry : public IExceptionTranslatorRegistry {
 	public:
 		~ExceptionTranslatorRegistry();
@@ -17129,6 +17864,8 @@ namespace Catch {
 		std::vector<std::unique_ptr<IExceptionTranslator const>> m_translators;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     class ExceptionTranslatorRegistry : public IExceptionTranslatorRegistry {
     public:
         ~ExceptionTranslatorRegistry();
@@ -17139,6 +17876,9 @@ namespace Catch {
     private:
         std::vector<std::unique_ptr<IExceptionTranslator const>> m_translators;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 
@@ -17149,6 +17889,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	ExceptionTranslatorRegistry::~ExceptionTranslatorRegistry() {
 	}
@@ -17206,6 +17947,8 @@ namespace Catch {
 			return m_translators[0]->translate(m_translators.begin() + 1, m_translators.end());
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     ExceptionTranslatorRegistry::~ExceptionTranslatorRegistry() {
     }
 
@@ -17274,13 +18017,19 @@ namespace Catch {
     }
 #endif
 
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 // end catch_exception_translator_registry.cpp
 // start catch_fatal_condition.cpp
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #include <algorithm>
 
 #if !defined( CATCH_CONFIG_WINDOWS_SEH ) && !defined( CATCH_CONFIG_POSIX_SIGNALS )
@@ -17409,12 +18158,16 @@ namespace Catch {
 // Older GCCs trigger -Wmissing-field-initializers for T foo = {}
 // which is zero initialization, but not explicit. We want to avoid
 // that.
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #if defined(__GNUC__)
 #    pragma GCC diagnostic push
 #    pragma GCC diagnostic ignored "-Wmissing-field-initializers"
 #endif
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #if defined( CATCH_CONFIG_WINDOWS_SEH ) || defined( CATCH_CONFIG_POSIX_SIGNALS )
 
@@ -17561,6 +18314,8 @@ namespace Catch {
 
 #endif // signals/SEH handling
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     static char* altStackMem = nullptr;
     static std::size_t altStackSize = 0;
     static stack_t oldSigStack{};
@@ -17623,11 +18378,15 @@ namespace Catch {
             sigaction(signalDefs[i].id, &sa, &oldSigActions[i]);
         }
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 #if defined(__GNUC__)
 #    pragma GCC diagnostic pop
 #endif
+<<<<<<< HEAD
 <<<<<<< HEAD
 // end catch_fatal_condition.cpp
 // start catch_interfaces_capture.cpp
@@ -17635,6 +18394,8 @@ namespace Catch {
 namespace Catch {
 	IResultCapture::~IResultCapture() = default;
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 
     void FatalConditionHandler::disengage_platform() {
         restorePreviousSignalHandlers();
@@ -17672,6 +18433,9 @@ namespace Generators {
 
 namespace Catch {
     IResultCapture::~IResultCapture() = default;
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 // end catch_interfaces_capture.cpp
@@ -17679,7 +18443,11 @@ namespace Catch {
 
 namespace Catch {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	IConfig::~IConfig() = default;
+=======
+    IConfig::~IConfig() = default;
+>>>>>>> 05a2e00 (Initial commit)
 =======
     IConfig::~IConfig() = default;
 >>>>>>> 05a2e00 (Initial commit)
@@ -17689,8 +18457,13 @@ namespace Catch {
 
 namespace Catch {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	IExceptionTranslator::~IExceptionTranslator() = default;
 	IExceptionTranslatorRegistry::~IExceptionTranslatorRegistry() = default;
+=======
+    IExceptionTranslator::~IExceptionTranslator() = default;
+    IExceptionTranslatorRegistry::~IExceptionTranslatorRegistry() = default;
+>>>>>>> 05a2e00 (Initial commit)
 =======
     IExceptionTranslator::~IExceptionTranslator() = default;
     IExceptionTranslatorRegistry::~IExceptionTranslatorRegistry() = default;
@@ -17701,8 +18474,13 @@ namespace Catch {
 
 namespace Catch {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	IRegistryHub::~IRegistryHub() = default;
 	IMutableRegistryHub::~IMutableRegistryHub() = default;
+=======
+    IRegistryHub::~IRegistryHub() = default;
+    IMutableRegistryHub::~IMutableRegistryHub() = default;
+>>>>>>> 05a2e00 (Initial commit)
 =======
     IRegistryHub::~IRegistryHub() = default;
     IMutableRegistryHub::~IMutableRegistryHub() = default;
@@ -17711,6 +18489,7 @@ namespace Catch {
 // end catch_interfaces_registry_hub.cpp
 // start catch_interfaces_reporter.cpp
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // start catch_reporter_multi.h
 
@@ -17876,6 +18655,8 @@ namespace Catch {
 		multi->add(std::move(additionalReporter));
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 // start catch_reporter_listening.h
 
 namespace Catch {
@@ -18029,6 +18810,9 @@ namespace Catch {
 
     IReporterFactory::~IReporterFactory() = default;
     IReporterRegistry::~IReporterRegistry() = default;
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -18037,7 +18821,11 @@ namespace Catch {
 
 namespace Catch {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	IRunner::~IRunner() = default;
+=======
+    IRunner::~IRunner() = default;
+>>>>>>> 05a2e00 (Initial commit)
 =======
     IRunner::~IRunner() = default;
 >>>>>>> 05a2e00 (Initial commit)
@@ -18047,8 +18835,13 @@ namespace Catch {
 
 namespace Catch {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	ITestInvoker::~ITestInvoker() = default;
 	ITestCaseRegistry::~ITestCaseRegistry() = default;
+=======
+    ITestInvoker::~ITestInvoker() = default;
+    ITestCaseRegistry::~ITestCaseRegistry() = default;
+>>>>>>> 05a2e00 (Initial commit)
 =======
     ITestInvoker::~ITestInvoker() = default;
     ITestCaseRegistry::~ITestCaseRegistry() = default;
@@ -18063,6 +18856,7 @@ namespace Catch {
 namespace Catch {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	LeakDetector::LeakDetector() {
 		int flag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG);
 		flag |= _CRTDBG_LEAK_CHECK_DF;
@@ -18074,6 +18868,8 @@ namespace Catch {
 		_CrtSetBreakAlloc(-1);
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     LeakDetector::LeakDetector() {
         int flag = _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG);
         flag |= _CRTDBG_LEAK_CHECK_DF;
@@ -18084,16 +18880,22 @@ namespace Catch {
         // Change this to leaking allocation's number to break there
         _CrtSetBreakAlloc(-1);
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 
 #else
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Catch::LeakDetector::LeakDetector() {}
 
 #endif
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     Catch::LeakDetector::LeakDetector() {}
 
 #endif
@@ -18101,6 +18903,9 @@ Catch::LeakDetector::LeakDetector() {}
 Catch::LeakDetector::~LeakDetector() {
     Catch::cleanUp();
 }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 // end catch_leak_detector.cpp
 // start catch_list.cpp
@@ -18111,6 +18916,7 @@ Catch::LeakDetector::~LeakDetector() {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	std::size_t listTests(Config const& config);
 
@@ -18130,6 +18936,8 @@ namespace Catch {
 
 	Option<std::size_t> list(Config const& config);
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     std::size_t listTests( Config const& config );
 
     std::size_t listTestsNamesOnly( Config const& config );
@@ -18147,6 +18955,9 @@ namespace Catch {
     std::size_t listReporters();
 
     Option<std::size_t> list( std::shared_ptr<Config> const& config );
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -18156,7 +18967,11 @@ namespace Catch {
 
 namespace Catch {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	using namespace clara::TextFlow;
+=======
+    using namespace clara::TextFlow;
+>>>>>>> 05a2e00 (Initial commit)
 =======
     using namespace clara::TextFlow;
 >>>>>>> 05a2e00 (Initial commit)
@@ -18169,6 +18984,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	std::size_t listTests(Config const& config) {
 		TestSpec testSpec = config.testSpec();
@@ -18303,6 +19119,8 @@ namespace Catch {
 		return listedCount;
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     std::size_t listTests( Config const& config ) {
         TestSpec const& testSpec = config.testSpec();
         if( config.hasTestFilters() )
@@ -18445,6 +19263,9 @@ namespace Catch {
             listedCount = listedCount.valueOr(0) + listReporters();
         return listedCount;
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -18452,6 +19273,7 @@ namespace Catch {
 // start catch_matchers.cpp
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	namespace Matchers {
 		namespace Impl {
@@ -18600,6 +19422,8 @@ namespace Catch {
 } // namespace Catch
 
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace Matchers {
     namespace Impl {
 
@@ -18888,11 +19712,15 @@ Floating::WithinRelMatcher WithinRel(float target) {
 
 } // namespace Matchers
 } // namespace Catch
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 // end catch_matchers_floating.cpp
 // start catch_matchers_generic.cpp
 
 std::string Catch::Matchers::Generic::Detail::finalizeDescription(const std::string& desc) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	if (desc.empty()) {
 		return "matches undescribed predicate";
@@ -18901,11 +19729,16 @@ std::string Catch::Matchers::Generic::Detail::finalizeDescription(const std::str
 		return "matches predicate: \"" + desc + '"';
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     if (desc.empty()) {
         return "matches undescribed predicate";
     } else {
         return "matches predicate: \"" + desc + '"';
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 // end catch_matchers_generic.cpp
@@ -18914,6 +19747,7 @@ std::string Catch::Matchers::Generic::Detail::finalizeDescription(const std::str
 #include <regex>
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	namespace Matchers {
 
@@ -19011,6 +19845,8 @@ namespace Catch {
 
 	} // namespace Matchers
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace Matchers {
 
     namespace StdString {
@@ -19106,6 +19942,9 @@ namespace Matchers {
     }
 
 } // namespace Matchers
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 } // namespace Catch
 // end catch_matchers_string.cpp
@@ -19114,6 +19953,7 @@ namespace Matchers {
 // start catch_uncaught_exceptions.h
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	bool uncaught_exceptions();
 } // end namespace Catch
@@ -19217,6 +20057,8 @@ namespace Catch {
 	}
 
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     bool uncaught_exceptions();
 } // end namespace Catch
 
@@ -19678,6 +20520,9 @@ namespace {
     bool operator!=(SimplePcg32 const& lhs, SimplePcg32 const& rhs) {
         return lhs.m_state != rhs.m_state;
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 // end catch_random_number_generator.cpp
@@ -19692,6 +20537,7 @@ namespace {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	class TestCase;
 	struct IConfig;
@@ -19735,6 +20581,8 @@ namespace Catch {
 
 	///////////////////////////////////////////////////////////////////////////
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     class TestCase;
     struct IConfig;
 
@@ -19778,6 +20626,9 @@ namespace Catch {
     std::string extractClassName( StringRef const& classOrQualifiedMethodName );
 
     ///////////////////////////////////////////////////////////////////////////
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -19789,6 +20640,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	class ReporterRegistry : public IReporterRegistry {
 
@@ -19809,6 +20661,8 @@ namespace Catch {
 		Listeners m_listeners;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     class ReporterRegistry : public IReporterRegistry {
 
     public:
@@ -19827,6 +20681,9 @@ namespace Catch {
         FactoryMap m_factories;
         Listeners m_listeners;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 
@@ -19840,6 +20697,7 @@ namespace Catch {
 namespace Catch {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	struct TagAlias {
 		TagAlias(std::string const& _tag, SourceLineInfo _lineInfo);
 
@@ -19847,12 +20705,17 @@ namespace Catch {
 		SourceLineInfo lineInfo;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     struct TagAlias {
         TagAlias(std::string const& _tag, SourceLineInfo _lineInfo);
 
         std::string tag;
         SourceLineInfo lineInfo;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -19862,6 +20725,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	class TagAliasRegistry : public ITagAliasRegistry {
 	public:
@@ -19874,6 +20738,8 @@ namespace Catch {
 		std::map<std::string, TagAlias> m_registry;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     class TagAliasRegistry : public ITagAliasRegistry {
     public:
         ~TagAliasRegistry() override;
@@ -19884,6 +20750,9 @@ namespace Catch {
     private:
         std::map<std::string, TagAlias> m_registry;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -19897,6 +20766,7 @@ namespace Catch {
 namespace Catch {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	class StartupExceptionRegistry {
 	public:
 		void add(std::exception_ptr const& exception) noexcept;
@@ -19905,6 +20775,8 @@ namespace Catch {
 		std::vector<std::exception_ptr> m_exceptions;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     class StartupExceptionRegistry {
 #if !defined(CATCH_CONFIG_DISABLE_EXCEPTIONS)
     public:
@@ -19914,11 +20786,15 @@ namespace Catch {
         std::vector<std::exception_ptr> m_exceptions;
 #endif
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
 
 // end catch_startup_exception_registry.h
+<<<<<<< HEAD
 <<<<<<< HEAD
 namespace Catch {
 
@@ -19998,6 +20874,8 @@ namespace Catch {
 		return getRegistryHub().getExceptionTranslatorRegistry().translateActiveException();
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 // start catch_singletons.hpp
 
 namespace Catch {
@@ -20110,6 +20988,9 @@ namespace Catch {
     std::string translateActiveException() {
         return getRegistryHub().getExceptionTranslatorRegistry().translateActiveException();
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -20118,6 +20999,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	ReporterRegistry::~ReporterRegistry() = default;
 
@@ -20142,6 +21024,8 @@ namespace Catch {
 		return m_listeners;
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     ReporterRegistry::~ReporterRegistry() = default;
 
     IStreamingReporterPtr ReporterRegistry::create( std::string const& name, IConfigPtr const& config ) const {
@@ -20164,6 +21048,9 @@ namespace Catch {
     IReporterRegistry::Listeners const& ReporterRegistry::getListeners() const {
         return m_listeners;
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 }
@@ -20172,6 +21059,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	bool isOk(ResultWas::OfType resultType) {
 		return (resultType & ResultWas::FailureBit) == 0;
@@ -20187,6 +21075,8 @@ namespace Catch {
 	bool shouldContinueOnFailure(int flags) { return (flags & ResultDisposition::ContinueOnFailure) != 0; }
 	bool shouldSuppressFailure(int flags) { return (flags & ResultDisposition::SuppressFail) != 0; }
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     bool isOk( ResultWas::OfType resultType ) {
         return ( resultType & ResultWas::FailureBit ) == 0;
     }
@@ -20200,6 +21090,9 @@ namespace Catch {
 
     bool shouldContinueOnFailure( int flags )    { return ( flags & ResultDisposition::ContinueOnFailure ) != 0; }
     bool shouldSuppressFailure( int flags )      { return ( flags & ResultDisposition::SuppressFail ) != 0; }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -20212,6 +21105,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	class RedirectedStream {
 		std::ostream& m_originalStream;
@@ -20667,6 +21561,8 @@ namespace Catch {
 			CATCH_INTERNAL_ERROR("No result capture instance");
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     namespace Generators {
         struct GeneratorTracker : TestCaseTracking::TrackerBase, IGeneratorTracker {
             GeneratorBasePtr m_generator;
@@ -21245,6 +22141,9 @@ namespace Catch {
         return getCurrentContext().getConfig()->rngSeed();
     }
 
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 // end catch_run_context.cpp
@@ -21252,6 +22151,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	Section::Section(SectionInfo const& info)
 		: m_info(info),
@@ -21275,6 +22175,8 @@ namespace Catch {
 		return m_sectionIncluded;
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     Section::Section( SectionInfo const& info )
     :   m_info( info ),
         m_sectionIncluded( getResultCapture().sectionStarted( m_info, m_assertions ) )
@@ -21296,6 +22198,9 @@ namespace Catch {
     Section::operator bool() const {
         return m_sectionIncluded;
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -21304,6 +22209,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	SectionInfo::SectionInfo
 	(SourceLineInfo const& _lineInfo,
@@ -21318,12 +22224,17 @@ namespace Catch {
 		: sectionInfo(_sectionInfo), prevAssertions(_prevAssertions), durationInSeconds(_durationInSeconds)
 	{}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     SectionInfo::SectionInfo
         (   SourceLineInfo const& _lineInfo,
             std::string const& _name )
     :   name( _name ),
         lineInfo( _lineInfo )
     {}
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -21336,6 +22247,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	class Session : NonCopyable {
 	public:
@@ -21369,6 +22281,8 @@ namespace Catch {
 		bool m_startupExceptions = false;
 	};
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     class Session : NonCopyable {
     public:
 
@@ -21409,6 +22323,9 @@ namespace Catch {
         std::shared_ptr<Config> m_config;
         bool m_startupExceptions = false;
     };
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -21420,6 +22337,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	// Versioning information
 	struct Version {
@@ -21444,6 +22362,8 @@ namespace Catch {
 
 	Version const& libraryVersion();
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     // Versioning information
     struct Version {
         Version( Version const& ) = delete;
@@ -21466,12 +22386,16 @@ namespace Catch {
     };
 
     Version const& libraryVersion();
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 
 // end catch_version.h
 #include <cstdlib>
 #include <iomanip>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 namespace Catch {
@@ -21756,6 +22680,8 @@ namespace Catch {
 
 } // end namespace Catch
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #include <set>
 #include <iterator>
 
@@ -22096,6 +23022,9 @@ void StartupExceptionRegistry::add( std::exception_ptr const& exception ) noexce
 
 } // end namespace Catch
 #endif
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 // end catch_startup_exception_registry.cpp
 // start catch_stream.cpp
@@ -22107,6 +23036,7 @@ void StartupExceptionRegistry::add( std::exception_ptr const& exception ) noexce
 #include <vector>
 #include <memory>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #if defined(__clang__)
 #    pragma clang diagnostic push
@@ -22299,6 +23229,8 @@ namespace Catch {
 #    pragma clang diagnostic pop
 #endif
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace Catch {
 
     Catch::IStream::~IStream() = default;
@@ -22460,6 +23392,9 @@ namespace Catch {
     std::ostream& clog() { return std::clog; }
 #endif
 }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 // end catch_stream.cpp
 // start catch_string_manip.cpp
@@ -22468,6 +23403,7 @@ namespace Catch {
 #include <ostream>
 #include <cstring>
 #include <cctype>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 namespace Catch {
@@ -22532,6 +23468,8 @@ namespace Catch {
 		return os;
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #include <vector>
 
 namespace Catch {
@@ -22625,12 +23563,16 @@ namespace Catch {
             os << 's';
         return os;
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 }
 // end catch_string_manip.cpp
 // start catch_stringref.cpp
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #if defined(__clang__)
 #    pragma clang diagnostic push
@@ -22640,10 +23582,14 @@ namespace Catch {
 =======
 #include <algorithm>
 >>>>>>> 05a2e00 (Initial commit)
+=======
+#include <algorithm>
+>>>>>>> 05a2e00 (Initial commit)
 #include <ostream>
 #include <cstring>
 #include <cstdint>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 namespace {
 	const uint32_t byte_2_lead = 0xC0;
@@ -22754,6 +23700,8 @@ namespace Catch {
 #    pragma clang diagnostic pop
 #endif
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace Catch {
     StringRef::StringRef( char const* rawChars ) noexcept
     : StringRef( rawChars, static_cast<StringRef::size_type>(std::strlen(rawChars) ) )
@@ -22789,13 +23737,20 @@ namespace Catch {
     }
 
 } // namespace Catch
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 // end catch_stringref.cpp
 // start catch_tag_alias.cpp
 
 namespace Catch {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	TagAlias::TagAlias(std::string const & _tag, SourceLineInfo _lineInfo) : tag(_tag), lineInfo(_lineInfo) {}
+=======
+    TagAlias::TagAlias(std::string const & _tag, SourceLineInfo _lineInfo): tag(_tag), lineInfo(_lineInfo) {}
+>>>>>>> 05a2e00 (Initial commit)
 =======
     TagAlias::TagAlias(std::string const & _tag, SourceLineInfo _lineInfo): tag(_tag), lineInfo(_lineInfo) {}
 >>>>>>> 05a2e00 (Initial commit)
@@ -22805,6 +23760,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	RegistrarForTagAliases::RegistrarForTagAliases(char const* alias, char const* tag, SourceLineInfo const& lineInfo) {
 		try {
@@ -22816,6 +23772,8 @@ namespace Catch {
 		}
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     RegistrarForTagAliases::RegistrarForTagAliases(char const* alias, char const* tag, SourceLineInfo const& lineInfo) {
         CATCH_TRY {
             getMutableRegistryHub().registerTagAlias(alias, tag, lineInfo);
@@ -22824,6 +23782,9 @@ namespace Catch {
             getMutableRegistryHub().registerStartupException();
         }
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 }
@@ -22834,6 +23795,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	TagAliasRegistry::~TagAliasRegistry() {}
 
@@ -22874,6 +23836,8 @@ namespace Catch {
 		return getRegistryHub().getTagAliasRegistry();
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     TagAliasRegistry::~TagAliasRegistry() {}
 
     TagAlias const* TagAliasRegistry::find( std::string const& alias ) const {
@@ -22912,6 +23876,9 @@ namespace Catch {
     ITagAliasRegistry const& ITagAliasRegistry::get() {
         return getRegistryHub().getTagAliasRegistry();
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -22925,6 +23892,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	TestCaseInfo::SpecialProperties parseSpecialTag(std::string const& tag) {
 		if (startsWith(tag, '.') ||
@@ -23080,6 +24048,8 @@ namespace Catch {
 		return *this;
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     namespace {
         TestCaseInfo::SpecialProperties parseSpecialTag( std::string const& tag ) {
             if( startsWith( tag, '.' ) ||
@@ -23241,6 +24211,9 @@ namespace Catch {
     {
         return *this;
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -23248,6 +24221,10 @@ namespace Catch {
 // start catch_test_case_registry_impl.cpp
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+#include <algorithm>
+>>>>>>> 05a2e00 (Initial commit)
 =======
 #include <algorithm>
 >>>>>>> 05a2e00 (Initial commit)
@@ -23255,6 +24232,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	std::vector<TestCase> sortTests(IConfig const& config, std::vector<TestCase> const& unsortedTestCases) {
 
@@ -23345,6 +24323,8 @@ namespace Catch {
 		return className;
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     namespace {
         struct TestHasher {
             using hash_t = uint64_t;
@@ -23494,6 +24474,9 @@ namespace Catch {
         }
         return className;
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -23502,7 +24485,11 @@ namespace Catch {
 
 #include <algorithm>
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include <assert.h>
+=======
+#include <cassert>
+>>>>>>> 05a2e00 (Initial commit)
 =======
 #include <cassert>
 >>>>>>> 05a2e00 (Initial commit)
@@ -23516,6 +24503,7 @@ namespace Catch {
 #endif
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	namespace TestCaseTracking {
 
@@ -23771,6 +24759,8 @@ namespace Catch {
 	using TestCaseTracking::SectionTracker;
 	using TestCaseTracking::IndexTracker;
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace TestCaseTracking {
 
     NameAndLocation::NameAndLocation( std::string const& _name, SourceLineInfo const& _location )
@@ -23991,6 +24981,9 @@ namespace TestCaseTracking {
 using TestCaseTracking::ITracker;
 using TestCaseTracking::TrackerContext;
 using TestCaseTracking::SectionTracker;
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // namespace Catch
@@ -24003,6 +24996,7 @@ using TestCaseTracking::SectionTracker;
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	auto makeTestInvoker(void(*testAsFunction)()) noexcept -> ITestInvoker* {
 		return new(std::nothrow) TestInvokerAsFunction(testAsFunction);
@@ -24028,6 +25022,8 @@ namespace Catch {
 
 	AutoReg::~AutoReg() = default;
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     auto makeTestInvoker( void(*testAsFunction)() ) noexcept -> ITestInvoker* {
         return new(std::nothrow) TestInvokerAsFunction( testAsFunction );
     }
@@ -24050,6 +25046,9 @@ namespace Catch {
     }
 
     AutoReg::~AutoReg() = default;
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 // end catch_test_registry.cpp
@@ -24062,6 +25061,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	TestSpec::Pattern::~Pattern() = default;
 	TestSpec::NamePattern::~NamePattern() = default;
@@ -24105,6 +25105,8 @@ namespace Catch {
 		return false;
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     TestSpec::Pattern::Pattern( std::string const& name )
     : m_name( name )
     {}
@@ -24180,6 +25182,9 @@ namespace Catch {
         return  (m_invalidArgs);
     }
 
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 // end catch_test_spec.cpp
@@ -24187,6 +25192,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	TestSpecParser::TestSpecParser(ITagAliasRegistry const& tagAliases) : m_tagAliases(&tagAliases) {}
 
@@ -24263,6 +25269,8 @@ namespace Catch {
 		return TestSpecParser(ITagAliasRegistry::get()).parse(arg).testSpec();
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     TestSpecParser::TestSpecParser( ITagAliasRegistry const& tagAliases ) : m_tagAliases( &tagAliases ) {}
 
     TestSpecParser& TestSpecParser::parse( std::string const& arg ) {
@@ -24489,6 +25497,9 @@ namespace Catch {
     TestSpec parseTestSpec( std::string const& arg ) {
         return TestSpecParser( ITagAliasRegistry::get() ).parse( arg ).testSpec();
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // namespace Catch
@@ -24501,6 +25512,7 @@ static const uint64_t nanosecondsInSecond = 1000000000;
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	auto getCurrentNanosecondsSinceEpoch() -> uint64_t {
 		return std::chrono::duration_cast<std::chrono::nanoseconds>(std::chrono::high_resolution_clock::now().time_since_epoch()).count();
@@ -24556,6 +25568,8 @@ namespace Catch {
 		return getElapsedMicroseconds() / 1000000.0;
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     auto getCurrentNanosecondsSinceEpoch() -> uint64_t {
         return std::chrono::duration_cast<std::chrono::nanoseconds>( std::chrono::high_resolution_clock::now().time_since_epoch() ).count();
     }
@@ -24611,6 +25625,9 @@ namespace Catch {
     auto Timer::getElapsedSeconds() const -> double {
         return getElapsedMicroseconds()/1000000.0;
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // namespace Catch
@@ -24633,6 +25650,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	namespace Detail {
 
@@ -24849,6 +25867,8 @@ namespace Catch {
 	std::string ratio_string<std::micro>::symbol() { return "u"; }
 	std::string ratio_string<std::milli>::symbol() { return "m"; }
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace Detail {
 
     const std::string unprintableString = "{?}";
@@ -25075,6 +26095,9 @@ std::string ratio_string<std::pico>::symbol() { return "p"; }
 std::string ratio_string<std::nano>::symbol() { return "n"; }
 std::string ratio_string<std::micro>::symbol() { return "u"; }
 std::string ratio_string<std::milli>::symbol() { return "m"; }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -25088,6 +26111,7 @@ std::string ratio_string<std::milli>::symbol() { return "m"; }
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	Counts Counts::operator - (Counts const& other) const {
 		Counts diff;
@@ -25138,6 +26162,8 @@ namespace Catch {
 		return diff;
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     Counts Counts::operator - ( Counts const& other ) const {
         Counts diff;
         diff.passed = passed - other.passed;
@@ -25186,12 +26212,16 @@ namespace Catch {
             ++diff.testCases.passed;
         return diff;
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 }
 // end catch_totals.cpp
 // start catch_uncaught_exceptions.cpp
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #include <exception>
 
@@ -25204,6 +26234,8 @@ namespace Catch {
 #endif
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 // start catch_config_uncaught_exceptions.hpp
 
 //              Copyright Catch2 Authors
@@ -25251,6 +26283,9 @@ namespace Catch {
         return std::uncaught_exception();
 #endif
   }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 } // end namespace Catch
 // end catch_uncaught_exceptions.cpp
@@ -25260,6 +26295,7 @@ namespace Catch {
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	Version::Version
 	(unsigned int _majorVersion,
@@ -25291,6 +26327,8 @@ namespace Catch {
 		return version;
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     Version::Version
         (   unsigned int _majorVersion,
             unsigned int _minorVersion,
@@ -25320,12 +26358,16 @@ namespace Catch {
         static Version version( 2, 13, 9, "", 0 );
         return version;
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 }
 // end catch_version.cpp
 // start catch_wildcard_pattern.cpp
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #include <sstream>
 
@@ -25365,6 +26407,8 @@ namespace Catch {
 		return m_caseSensitivity == CaseSensitive::No ? toLower(str) : str;
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace Catch {
 
     WildcardPattern::WildcardPattern( std::string const& pattern,
@@ -25400,12 +26444,16 @@ namespace Catch {
     std::string WildcardPattern::normaliseString( std::string const& str ) const {
         return trim( m_caseSensitivity == CaseSensitive::No ? toLower( str ) : str );
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 // end catch_wildcard_pattern.cpp
 // start catch_xmlwriter.cpp
 
 #include <iomanip>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 using uchar = unsigned char;
@@ -25678,6 +26726,8 @@ namespace Catch {
 		}
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #include <type_traits>
 
 namespace Catch {
@@ -25997,6 +27047,9 @@ namespace {
             m_needsNewline = false;
         }
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 // end catch_xmlwriter.cpp
@@ -26005,6 +27058,7 @@ namespace {
 #include <cstring>
 #include <cfloat>
 #include <cstdio>
+<<<<<<< HEAD
 <<<<<<< HEAD
 #include <assert.h>
 #include <memory>
@@ -26043,6 +27097,8 @@ namespace Catch {
 		return false;
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #include <cassert>
 #include <memory>
 
@@ -26109,6 +27165,9 @@ namespace Catch {
     bool TestEventListenerBase::assertionEnded(AssertionStats const &) {
         return false;
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -26118,6 +27177,7 @@ namespace Catch {
 namespace {
 
 #ifdef CATCH_PLATFORM_MAC
+<<<<<<< HEAD
 <<<<<<< HEAD
 	const char* failedString() { return "FAILED"; }
 	const char* passedString() { return "PASSED"; }
@@ -26134,6 +27194,8 @@ namespace {
 			count == 2 ? "both " : "all ";
 	}
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
     const char* failedString() { return "FAILED"; }
     const char* passedString() { return "PASSED"; }
 #else
@@ -26148,11 +27210,15 @@ namespace {
         return count == 1 ? std::string() :
                count == 2 ? "both " : "all " ;
     }
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // anon namespace
 
 namespace Catch {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	namespace {
 		// Colour, message variants:
@@ -26417,6 +27483,8 @@ namespace Catch {
 
 	CATCH_REGISTER_REPORTER("compact", CompactReporter)
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace {
 // Colour, message variants:
 // - white: No tests ran.
@@ -26671,6 +27739,9 @@ private:
         CompactReporter::~CompactReporter() {}
 
     CATCH_REGISTER_REPORTER( "compact", CompactReporter )
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -26684,9 +27755,12 @@ private:
 #pragma warning(push)
 #pragma warning(disable:4061) // Not all labels are EXPLICITLY handled in switch
 <<<<<<< HEAD
+<<<<<<< HEAD
  // Note that 4062 (not all labels are handled
  // and default is missing) is enabled
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
  // Note that 4062 (not all labels are handled and default is missing) is enabled
 #endif
 
@@ -26694,11 +27768,15 @@ private:
 #  pragma clang diagnostic push
 // For simplicity, benchmarking-only helpers are always enabled
 #  pragma clang diagnostic ignored "-Wunused-function"
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #endif
 
 namespace Catch {
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	namespace {
 
@@ -27304,6 +28382,8 @@ namespace Catch {
 
 	CATCH_REGISTER_REPORTER("console", ConsoleReporter)
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 namespace {
 
 // Formatter impl for ConsoleReporter
@@ -27958,6 +29038,9 @@ void ConsoleReporter::printTestFilters() {
 }
 
 CATCH_REGISTER_REPORTER("console", ConsoleReporter)
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -27965,6 +29048,7 @@ CATCH_REGISTER_REPORTER("console", ConsoleReporter)
 #if defined(_MSC_VER)
 #pragma warning(pop)
 #endif
+<<<<<<< HEAD
 <<<<<<< HEAD
 // end catch_reporter_console.cpp
 // start catch_reporter_junit.cpp
@@ -28297,6 +29381,8 @@ namespace Catch {
 } // end namespace Catch
 // end catch_reporter_multi.cpp
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 
 #if defined(__clang__)
 #  pragma clang diagnostic pop
@@ -28743,12 +29829,16 @@ namespace Catch {
 
 } // end namespace Catch
 // end catch_reporter_listening.cpp
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 // start catch_reporter_xml.cpp
 
 #if defined(_MSC_VER)
 #pragma warning(push)
 #pragma warning(disable:4061) // Not all labels are EXPLICITLY handled in switch
+<<<<<<< HEAD
 <<<<<<< HEAD
 							  // Note that 4062 (not all labels are handled
 							  // and default is missing) is enabled
@@ -28952,6 +30042,8 @@ namespace Catch {
 
 	CATCH_REGISTER_REPORTER("xml", XmlReporter)
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
                               // Note that 4062 (not all labels are handled
                               // and default is missing) is enabled
 #endif
@@ -29210,6 +30302,9 @@ namespace Catch {
 #endif // CATCH_CONFIG_ENABLE_BENCHMARKING
 
     CATCH_REGISTER_REPORTER( "xml", XmlReporter )
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 } // end namespace Catch
@@ -29221,7 +30316,11 @@ namespace Catch {
 
 namespace Catch {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	LeakDetector leakDetector;
+=======
+    LeakDetector leakDetector;
+>>>>>>> 05a2e00 (Initial commit)
 =======
     LeakDetector leakDetector;
 >>>>>>> 05a2e00 (Initial commit)
@@ -29240,6 +30339,7 @@ namespace Catch {
 #ifndef __OBJC__
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #if defined(CATCH_CONFIG_WCHAR) && defined(WIN32) && defined(_UNICODE) && !defined(DO_NOT_USE_WMAIN)
 // Standard C/C++ Win32 Unicode wmain entry point
 extern "C" int wmain(int argc, wchar_t * argv[], wchar_t *[]) {
@@ -29250,6 +30350,8 @@ int main(int argc, char * argv[]) {
 
 	return Catch::Session().run(argc, argv);
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #if defined(CATCH_CONFIG_WCHAR) && defined(CATCH_PLATFORM_WINDOWS) && defined(_UNICODE) && !defined(DO_NOT_USE_WMAIN)
 // Standard C/C++ Win32 Unicode wmain entry point
 extern "C" int wmain (int argc, wchar_t * argv[], wchar_t * []) {
@@ -29259,12 +30361,16 @@ int main (int argc, char * argv[]) {
 #endif
 
     return Catch::Session().run( argc, argv );
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 
 #else // __OBJC__
 
 // Objective-C entry point
+<<<<<<< HEAD
 <<<<<<< HEAD
 int main(int argc, char * const argv[]) {
 #if !CATCH_ARC_ENABLED
@@ -29280,6 +30386,8 @@ int main(int argc, char * const argv[]) {
 
 	return result;
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 int main (int argc, char * const argv[]) {
 #if !CATCH_ARC_ENABLED
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
@@ -29293,6 +30401,9 @@ int main (int argc, char * const argv[]) {
 #endif
 
     return result;
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 }
 
@@ -29316,7 +30427,11 @@ int main (int argc, char * const argv[]) {
 #define CATCH_REQUIRE_FALSE( ... ) INTERNAL_CATCH_TEST( "CATCH_REQUIRE_FALSE", Catch::ResultDisposition::Normal | Catch::ResultDisposition::FalseTest, __VA_ARGS__ )
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define CATCH_REQUIRE_THROWS( ... ) INTERNAL_CATCH_THROWS( "CATCH_REQUIRE_THROWS", Catch::ResultDisposition::Normal, "", __VA_ARGS__ )
+=======
+#define CATCH_REQUIRE_THROWS( ... ) INTERNAL_CATCH_THROWS( "CATCH_REQUIRE_THROWS", Catch::ResultDisposition::Normal, __VA_ARGS__ )
+>>>>>>> 05a2e00 (Initial commit)
 =======
 #define CATCH_REQUIRE_THROWS( ... ) INTERNAL_CATCH_THROWS( "CATCH_REQUIRE_THROWS", Catch::ResultDisposition::Normal, __VA_ARGS__ )
 >>>>>>> 05a2e00 (Initial commit)
@@ -29334,7 +30449,11 @@ int main (int argc, char * const argv[]) {
 #define CATCH_CHECK_NOFAIL( ... ) INTERNAL_CATCH_TEST( "CATCH_CHECK_NOFAIL", Catch::ResultDisposition::ContinueOnFailure | Catch::ResultDisposition::SuppressFail, __VA_ARGS__ )
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define CATCH_CHECK_THROWS( ... )  INTERNAL_CATCH_THROWS( "CATCH_CHECK_THROWS", Catch::ResultDisposition::ContinueOnFailure, "", __VA_ARGS__ )
+=======
+#define CATCH_CHECK_THROWS( ... )  INTERNAL_CATCH_THROWS( "CATCH_CHECK_THROWS", Catch::ResultDisposition::ContinueOnFailure, __VA_ARGS__ )
+>>>>>>> 05a2e00 (Initial commit)
 =======
 #define CATCH_CHECK_THROWS( ... )  INTERNAL_CATCH_THROWS( "CATCH_CHECK_THROWS", Catch::ResultDisposition::ContinueOnFailure, __VA_ARGS__ )
 >>>>>>> 05a2e00 (Initial commit)
@@ -29353,8 +30472,14 @@ int main (int argc, char * const argv[]) {
 
 #define CATCH_INFO( msg ) INTERNAL_CATCH_INFO( "CATCH_INFO", msg )
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define CATCH_WARN( msg ) INTERNAL_CATCH_MSG( "CATCH_WARN", Catch::ResultWas::Warning, Catch::ResultDisposition::ContinueOnFailure, msg )
 #define CATCH_CAPTURE( msg ) INTERNAL_CATCH_INFO( "CATCH_CAPTURE", #msg " := " << ::Catch::Detail::stringify(msg) )
+=======
+#define CATCH_UNSCOPED_INFO( msg ) INTERNAL_CATCH_UNSCOPED_INFO( "CATCH_UNSCOPED_INFO", msg )
+#define CATCH_WARN( msg ) INTERNAL_CATCH_MSG( "CATCH_WARN", Catch::ResultWas::Warning, Catch::ResultDisposition::ContinueOnFailure, msg )
+#define CATCH_CAPTURE( ... ) INTERNAL_CATCH_CAPTURE( INTERNAL_CATCH_UNIQUE_NAME(capturer), "CATCH_CAPTURE",__VA_ARGS__ )
+>>>>>>> 05a2e00 (Initial commit)
 =======
 #define CATCH_UNSCOPED_INFO( msg ) INTERNAL_CATCH_UNSCOPED_INFO( "CATCH_UNSCOPED_INFO", msg )
 #define CATCH_WARN( msg ) INTERNAL_CATCH_MSG( "CATCH_WARN", Catch::ResultWas::Warning, Catch::ResultDisposition::ContinueOnFailure, msg )
@@ -29367,6 +30492,10 @@ int main (int argc, char * const argv[]) {
 #define CATCH_REGISTER_TEST_CASE( Function, ... ) INTERNAL_CATCH_REGISTER_TESTCASE( Function, __VA_ARGS__ )
 #define CATCH_SECTION( ... ) INTERNAL_CATCH_SECTION( __VA_ARGS__ )
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+#define CATCH_DYNAMIC_SECTION( ... ) INTERNAL_CATCH_DYNAMIC_SECTION( __VA_ARGS__ )
+>>>>>>> 05a2e00 (Initial commit)
 =======
 #define CATCH_DYNAMIC_SECTION( ... ) INTERNAL_CATCH_DYNAMIC_SECTION( __VA_ARGS__ )
 >>>>>>> 05a2e00 (Initial commit)
@@ -29377,6 +30506,7 @@ int main (int argc, char * const argv[]) {
 #define CATCH_ANON_TEST_CASE() INTERNAL_CATCH_TESTCASE()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // "BDD-style" convenience wrappers
 #define CATCH_SCENARIO( ... ) CATCH_TEST_CASE( "Scenario: " __VA_ARGS__ )
 #define CATCH_SCENARIO_METHOD( className, ... ) INTERNAL_CATCH_TEST_CASE_METHOD( className, "Scenario: " __VA_ARGS__ )
@@ -29386,6 +30516,8 @@ int main (int argc, char * const argv[]) {
 #define CATCH_THEN( desc )     CATCH_SECTION( std::string( " Then: ") + desc )
 #define CATCH_AND_THEN( desc ) CATCH_SECTION( std::string( "  And: ") + desc )
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #ifndef CATCH_CONFIG_TRADITIONAL_MSVC_PREPROCESSOR
 #define CATCH_TEMPLATE_TEST_CASE( ... ) INTERNAL_CATCH_TEMPLATE_TEST_CASE( __VA_ARGS__ )
 #define CATCH_TEMPLATE_TEST_CASE_SIG( ... ) INTERNAL_CATCH_TEMPLATE_TEST_CASE_SIG( __VA_ARGS__ )
@@ -29430,6 +30562,9 @@ int main (int argc, char * const argv[]) {
 #define CATCH_BENCHMARK_ADVANCED(name) \
     INTERNAL_CATCH_BENCHMARK_ADVANCED(INTERNAL_CATCH_UNIQUE_NAME(C_A_T_C_H_B_E_N_C_H_), name)
 #endif // CATCH_CONFIG_ENABLE_BENCHMARKING
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 // If CATCH_CONFIG_PREFIX_ALL is not defined then the CATCH_ prefix is not required
@@ -29468,8 +30603,14 @@ int main (int argc, char * const argv[]) {
 
 #define INFO( msg ) INTERNAL_CATCH_INFO( "INFO", msg )
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define WARN( msg ) INTERNAL_CATCH_MSG( "WARN", Catch::ResultWas::Warning, Catch::ResultDisposition::ContinueOnFailure, msg )
 #define CAPTURE( msg ) INTERNAL_CATCH_INFO( "CAPTURE", #msg " := " << ::Catch::Detail::stringify(msg) )
+=======
+#define UNSCOPED_INFO( msg ) INTERNAL_CATCH_UNSCOPED_INFO( "UNSCOPED_INFO", msg )
+#define WARN( msg ) INTERNAL_CATCH_MSG( "WARN", Catch::ResultWas::Warning, Catch::ResultDisposition::ContinueOnFailure, msg )
+#define CAPTURE( ... ) INTERNAL_CATCH_CAPTURE( INTERNAL_CATCH_UNIQUE_NAME(capturer), "CAPTURE",__VA_ARGS__ )
+>>>>>>> 05a2e00 (Initial commit)
 =======
 #define UNSCOPED_INFO( msg ) INTERNAL_CATCH_UNSCOPED_INFO( "UNSCOPED_INFO", msg )
 #define WARN( msg ) INTERNAL_CATCH_MSG( "WARN", Catch::ResultWas::Warning, Catch::ResultDisposition::ContinueOnFailure, msg )
@@ -29482,6 +30623,10 @@ int main (int argc, char * const argv[]) {
 #define REGISTER_TEST_CASE( Function, ... ) INTERNAL_CATCH_REGISTER_TESTCASE( Function, __VA_ARGS__ )
 #define SECTION( ... ) INTERNAL_CATCH_SECTION( __VA_ARGS__ )
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+#define DYNAMIC_SECTION( ... ) INTERNAL_CATCH_DYNAMIC_SECTION( __VA_ARGS__ )
+>>>>>>> 05a2e00 (Initial commit)
 =======
 #define DYNAMIC_SECTION( ... ) INTERNAL_CATCH_DYNAMIC_SECTION( __VA_ARGS__ )
 >>>>>>> 05a2e00 (Initial commit)
@@ -29491,7 +30636,10 @@ int main (int argc, char * const argv[]) {
 #define ANON_TEST_CASE() INTERNAL_CATCH_TESTCASE()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #ifndef CATCH_CONFIG_TRADITIONAL_MSVC_PREPROCESSOR
 #define TEMPLATE_TEST_CASE( ... ) INTERNAL_CATCH_TEMPLATE_TEST_CASE( __VA_ARGS__ )
 #define TEMPLATE_TEST_CASE_SIG( ... ) INTERNAL_CATCH_TEMPLATE_TEST_CASE_SIG( __VA_ARGS__ )
@@ -29524,6 +30672,9 @@ int main (int argc, char * const argv[]) {
 #define STATIC_REQUIRE_FALSE( ... ) REQUIRE_FALSE( __VA_ARGS__ )
 #endif
 
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #endif
 
@@ -29533,6 +30684,7 @@ int main (int argc, char * const argv[]) {
 #define SCENARIO( ... ) TEST_CASE( "Scenario: " __VA_ARGS__ )
 #define SCENARIO_METHOD( className, ... ) INTERNAL_CATCH_TEST_CASE_METHOD( className, "Scenario: " __VA_ARGS__ )
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #define GIVEN( desc )    SECTION( std::string("   Given: ") + desc )
 #define WHEN( desc )     SECTION( std::string("    When: ") + desc )
@@ -29544,6 +30696,8 @@ using Catch::Detail::Approx;
 
 #else
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #define GIVEN( desc )     INTERNAL_CATCH_DYNAMIC_SECTION( "    Given: " << desc )
 #define AND_GIVEN( desc ) INTERNAL_CATCH_DYNAMIC_SECTION( "And given: " << desc )
 #define WHEN( desc )      INTERNAL_CATCH_DYNAMIC_SECTION( "     When: " << desc )
@@ -29562,6 +30716,9 @@ using Catch::Detail::Approx;
 
 #else // CATCH_CONFIG_DISABLE
 
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 //////
 // If this config identifier is defined then all CATCH macros are prefixed with CATCH_
@@ -29599,6 +30756,7 @@ using Catch::Detail::Approx;
 #endif // CATCH_CONFIG_DISABLE_MATCHERS
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define CATCH_INFO( msg )    (void)(0)
 #define CATCH_WARN( msg )    (void)(0)
 #define CATCH_CAPTURE( msg ) (void)(0)
@@ -29609,6 +30767,8 @@ using Catch::Detail::Approx;
 #define CATCH_REGISTER_TEST_CASE( Function, ... ) (void)(0)
 #define CATCH_SECTION( ... )
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #define CATCH_INFO( msg )          (void)(0)
 #define CATCH_UNSCOPED_INFO( msg ) (void)(0)
 #define CATCH_WARN( msg )          (void)(0)
@@ -29620,11 +30780,15 @@ using Catch::Detail::Approx;
 #define CATCH_REGISTER_TEST_CASE( Function, ... ) (void)(0)
 #define CATCH_SECTION( ... )
 #define CATCH_DYNAMIC_SECTION( ... )
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #define CATCH_FAIL( ... ) (void)(0)
 #define CATCH_FAIL_CHECK( ... ) (void)(0)
 #define CATCH_SUCCEED( ... ) (void)(0)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #define CATCH_ANON_TEST_CASE() INTERNAL_CATCH_TESTCASE_NO_REGISTRATION(INTERNAL_CATCH_UNIQUE_NAME( ____C_A_T_C_H____T_E_S_T____ ))
 
@@ -29633,6 +30797,8 @@ using Catch::Detail::Approx;
 #define CATCH_SCENARIO_METHOD( className, ... ) INTERNAL_CATCH_TESTCASE_METHOD_NO_REGISTRATION(INTERNAL_CATCH_UNIQUE_NAME( ____C_A_T_C_H____T_E_S_T____ ), className )
 #define CATCH_GIVEN( desc )
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #define CATCH_ANON_TEST_CASE() INTERNAL_CATCH_TESTCASE_NO_REGISTRATION(INTERNAL_CATCH_UNIQUE_NAME( C_A_T_C_H_T_E_S_T_ ))
 
 #ifndef CATCH_CONFIG_TRADITIONAL_MSVC_PREPROCESSOR
@@ -29660,6 +30826,9 @@ using Catch::Detail::Approx;
 #define CATCH_SCENARIO_METHOD( className, ... ) INTERNAL_CATCH_TESTCASE_METHOD_NO_REGISTRATION(INTERNAL_CATCH_UNIQUE_NAME( C_A_T_C_H_T_E_S_T_ ), className )
 #define CATCH_GIVEN( desc )
 #define CATCH_AND_GIVEN( desc )
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #define CATCH_WHEN( desc )
 #define CATCH_AND_WHEN( desc )
@@ -29667,6 +30836,12 @@ using Catch::Detail::Approx;
 #define CATCH_AND_THEN( desc )
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+#define CATCH_STATIC_REQUIRE( ... )       (void)(0)
+#define CATCH_STATIC_REQUIRE_FALSE( ... ) (void)(0)
+
+>>>>>>> 05a2e00 (Initial commit)
 =======
 #define CATCH_STATIC_REQUIRE( ... )       (void)(0)
 #define CATCH_STATIC_REQUIRE_FALSE( ... ) (void)(0)
@@ -29708,6 +30883,7 @@ using Catch::Detail::Approx;
 
 #define INFO( msg ) (void)(0)
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define WARN( msg ) (void)(0)
 #define CAPTURE( msg ) (void)(0)
 
@@ -29721,6 +30897,8 @@ using Catch::Detail::Approx;
 #define SUCCEED( ... ) (void)(0)
 #define ANON_TEST_CASE() INTERNAL_CATCH_TESTCASE_NO_REGISTRATION(INTERNAL_CATCH_UNIQUE_NAME( ____C_A_T_C_H____T_E_S_T____ ))
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #define UNSCOPED_INFO( msg ) (void)(0)
 #define WARN( msg ) (void)(0)
 #define CAPTURE( ... ) (void)(0)
@@ -29758,6 +30936,9 @@ using Catch::Detail::Approx;
 
 #define STATIC_REQUIRE( ... )       (void)(0)
 #define STATIC_REQUIRE_FALSE( ... ) (void)(0)
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 
 #endif
@@ -29766,16 +30947,22 @@ using Catch::Detail::Approx;
 
 // "BDD-style" convenience wrappers
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define SCENARIO( ... ) INTERNAL_CATCH_TESTCASE_NO_REGISTRATION(INTERNAL_CATCH_UNIQUE_NAME( ____C_A_T_C_H____T_E_S_T____ ) )
 #define SCENARIO_METHOD( className, ... ) INTERNAL_CATCH_TESTCASE_METHOD_NO_REGISTRATION(INTERNAL_CATCH_UNIQUE_NAME( ____C_A_T_C_H____T_E_S_T____ ), className )
 
 #define GIVEN( desc )
 =======
+=======
+>>>>>>> 05a2e00 (Initial commit)
 #define SCENARIO( ... ) INTERNAL_CATCH_TESTCASE_NO_REGISTRATION(INTERNAL_CATCH_UNIQUE_NAME( C_A_T_C_H_T_E_S_T_ ) )
 #define SCENARIO_METHOD( className, ... ) INTERNAL_CATCH_TESTCASE_METHOD_NO_REGISTRATION(INTERNAL_CATCH_UNIQUE_NAME( C_A_T_C_H_T_E_S_T_ ), className )
 
 #define GIVEN( desc )
 #define AND_GIVEN( desc )
+<<<<<<< HEAD
+>>>>>>> 05a2e00 (Initial commit)
+=======
 >>>>>>> 05a2e00 (Initial commit)
 #define WHEN( desc )
 #define AND_WHEN( desc )
@@ -29805,7 +30992,10 @@ using Catch::Detail::Approx;
 // end catch.hpp
 #endif // TWOBLUECUBES_SINGLE_INCLUDE_CATCH_HPP_INCLUDED
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 05a2e00 (Initial commit)
 =======
 >>>>>>> 05a2e00 (Initial commit)

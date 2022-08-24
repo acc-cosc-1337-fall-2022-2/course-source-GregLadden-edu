@@ -36,8 +36,11 @@
 /.vs
 /.vscode
 */CMakeFiles
+<<<<<<< HEAD
 cmake-build-debug
 
+=======
+>>>>>>> 05a2e00 (Initial commit)
 
 #build files
 cmake_install.cmake
