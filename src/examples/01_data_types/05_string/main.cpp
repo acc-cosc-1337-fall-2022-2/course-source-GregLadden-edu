@@ -4,6 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "Testing push!";
+    cout << "Testing pushgit!";
     return 0;
 }
