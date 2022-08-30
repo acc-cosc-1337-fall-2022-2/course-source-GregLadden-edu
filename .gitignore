@@ -36,6 +36,8 @@
 /.vs
 /.vscode
 */CMakeFiles
+cmake-build-debug
+
 
 #build files
 cmake_install.cmake
