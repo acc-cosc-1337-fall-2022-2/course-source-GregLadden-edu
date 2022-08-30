@@ -1,0 +1,6 @@
+# ninja log v5
+0	302	1661385893773438997	src/examples/00_hello_world/CMakeFiles/ex_00_01_exe.dir/main.cpp.o	344cf21ee3f50e9b
+303	340	1661385893812596132	src/examples/00_hello_world/ex_00_01_exe	f0dda02c19356699
+0	20	1661819131341170163	src/examples/01_data_types/05_string/CMakeFiles/ex_01_05_exe.dir/strings.cpp.o	849116162e7333d0
+0	331	1661819131651164070	src/examples/01_data_types/05_string/CMakeFiles/ex_01_05_exe.dir/main.cpp.o	655e13e480249d85
+331	359	1661819131680350003	src/examples/01_data_types/05_string/ex_01_05_exe	67e42785b8c58c5e
