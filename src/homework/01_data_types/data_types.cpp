@@ -7,6 +7,11 @@ int add_numbers(int numOne, int numTwo)
 }
 
 //write function code here
+int multiply_numbers(int numOne)
+{
+    auto numTwo = 5;
+    return numOne * numTwo;
+}
 
 
 
