@@ -22,13 +22,23 @@ int main()
     } else if (userInput == 1){
         cout<<"What is the your number grade? ";
         cin>>numberGrade;
-        letterGrade = get_letter_grade_using_if(numberGrade);
-        cout<< "You earned a(n): "<< letterGrade;
+
+        if(numberGrade < 0 || numberGrade > 100){
+            cout<<"The number grade is out of range.";
+        } else {
+            letterGrade = get_letter_grade_using_if(numberGrade);
+            cout<< "You earned a(n): "<< letterGrade;
+        }
     } else if(userInput == 2) {
         cout<<"What is the your number grade? ";
         cin>>numberGrade;
-        letterGrade = get_letter_grade_using_switch(numberGrade);
-        cout<< "You earned a(n): "<< letterGrade;
+
+        if(numberGrade < 0 || numberGrade > 100){
+            cout<<"The number grade is out of range";
+        } else {
+            letterGrade = get_letter_grade_using_switch(numberGrade);
+            cout<< "You earned a(n): "<< letterGrade;
+        }
     } else {
         cout<<"Exit";
     }
