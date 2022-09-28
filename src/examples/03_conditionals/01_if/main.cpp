@@ -6,7 +6,13 @@ using std::cin;
 
 int main() 
 {
-	//create a bool variable named even
+    auto vowel = "b";
+    if(vowel == "b") {
+        cout<< true;
+    } else {
+        cout<< false;
+    }
+    //create a bool variable named even
 	//create an int variable named value
 
 	//prompt user for a keyboard number
