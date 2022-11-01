@@ -1,115 +1,100 @@
+//cpp
 #include "tic_tac_toe.h"
+#include <iostream>
+#include <algorithm>
 
-char space[3][3] = {{'1','2','3'}, {'4','5','6',}, {'7','8','9'}};
-int row;
-int column;
-char token = 'x';
-string player1;
-string player2;
-bool draw = false;
+using std::count;
+using std::cout;
 
-void displayBoard() {
-    cout<< "   |   |   \n";
-    cout<<" "<<space[0][0]<<" | "<<space[0][1]<<" | "<<space[0][2]<<" "  "\n";
-    cout<< "___|___|___\n";
-    cout<< "   |   |   \n";
-    cout<<" "<<space[1][0]<<" | "<<space[1][1]<<" | "<<space[1][2]<<" "  "\n";
-    cout<< "___|___|___\n";
-    cout<< "   |   |   \n";
-    cout<<" "<<space[2][0]<<" | "<<space[2][1]<<" | "<<space[2][2]<<" "  "\n";
-    cout<< "   |   |   \n";
+bool TicTacToe::game_over()
+{
+    return check_board_full();
 }
 
-void functionTwo() {
-    int digit;
-
-    if(token == 'x'){
-        cout<<player1<<"please enter";
-        cin>>digit;
+void TicTacToe::start_game(string first_player)
+{
+    if (first_player == "X" || first_player == "O")
+    {
+        player = first_player;
+    }
+    else
+    {
+        cout << "Invalid Entry. Defaulting Player 1 to 'X'\n";
+        first_player = "X";
+        player = first_player;
     }
 
-    if(token == '0'){
-        cout<<player2<<"please enter";
-        cin>>digit;
-    }
-
-    if(digit < 1 || digit > 9) {
-        cout<<"Invalid number. Pick a number between 1-9\n";
-    }
-
-    if(digit == 1){
-        row = 0;
-        column = 0;
-    }if(digit == 2){
-        row = 0;
-        column = 1;
-    }if(digit == 3){
-        row = 0;
-        column = 2;
-    }if(digit == 4){
-        row = 1;
-        column = 0;
-    }if(digit == 5){
-        row = 1;
-        column = 1;
-    }if(digit == 6){
-        row = 1;
-        column = 2;
-    }if(digit == 7){
-        row = 2;
-        column = 0;
-    }if(digit == 8){
-        row = 2;
-        column = 1;
-    }if(digit == 9){
-        row = 2;
-        column = 2;
-    }
-
-    if(token == 'x' && space[row][column] != 'x' && space[row][column] != '0') {
-        space[row][column] = 'x';
-        token = '0';
-    } else if(token == '0' && space[row][column] != 'x' && space[row][column] != '0'){
-        space[row][column] = '0';
-        token = 'x';
-    } else {
-        cout<<"That space has been taken\n";
-        functionTwo();
-    }
-    displayBoard();
+    clear_board();
 }
 
-bool functionThree(){
-    for (int i=0; i < 3; i++) {
-
-        if((space[i][0] == space[i][1] && space[i][0] == space[i][2]) || (space[0][i] == space[1][i] && space[0][i] == space[2][i])){
-            return true;
-        }
-
-        if((space[0][0] == space[1][1] && space[0][0] == space[2][2]) || (space[0][2] == space[1][1] && space[0][2] == space[2][0])){
-            return true;
-        }
-    }
-
-    for(auto & i : space) {
-        for(char j : i){
-            if(j != 'x' && j != '0'){
-                return false;
-            }
-        }
-    }
-    draw = true;
-    return false;
+void TicTacToe::mark_board(int position)
+{
+    pegs[position - 1] = player;
+    set_next_player();
 }
 
-void displayWinner(){
-    if(token == 'x' && !draw){
-        cout<<"Congratulations!Player with '0' has won the game\n";
+string TicTacToe::get_player() const
+{
+    return player;
+}
+
+void TicTacToe::display_board() const
+{
+
+    for(int i = 0; i < pegs.size(); i++)
+    {
+        cout << pegs[i];
+        if(i == 2 || i == 5 || i == 8)
+        {
+            cout << '\n';
+        }
+        else
+        {
+            cout << "|";
+        }
     }
-    else if(token == '0' && !draw){
-        cout<<"Congratulations!Player with 'X' has won the game\n";
+    cout << '\n';
+}
+
+void TicTacToe::set_next_player()
+{
+    if(player == "X")
+    {
+        player = "O";
     }
-    else {
-        cout << "GAME DRAW!!!\n";
+    else
+    {
+        player = "X";
     }
+}
+
+bool TicTacToe::check_board_full()
+{
+    bool isOver;
+    if(std::count(pegs.begin(), pegs.end(), " "))
+    {
+        isOver = false;
+    }
+    else
+    {
+        isOver = true;
+    }
+    return isOver;
+}
+
+void TicTacToe::clear_board()
+{
+    for(auto& peg : pegs)
+    {
+        peg = " ";
+    }
+}
+
+//////////////////EXTRA FUNCTIONS//////////////////////////
+
+void display_board_instructions()
+{
+    cout << "\nValid Board Positions\n";
+    cout << "1|2|3\n";
+    cout << "4|5|6\n7|8|9\n";
 }
