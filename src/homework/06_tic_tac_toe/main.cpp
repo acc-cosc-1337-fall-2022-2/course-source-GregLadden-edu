@@ -5,6 +5,7 @@ using
         std::cout,
         std::cin;
 
+
 int main()
 {
     TicTacToe game;
@@ -12,7 +13,6 @@ int main()
     string first_player;
     int position;
     int space = 0;
-
 
     cout << "Tic Tac Toe\n";
     cout << "Player 1: Choose X or O\n";

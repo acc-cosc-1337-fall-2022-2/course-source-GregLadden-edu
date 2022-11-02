@@ -44,13 +44,18 @@ void TicTacToe::display_board() const
     for(int i = 0; i < pegs.size(); i++)
     {
         cout << pegs[i];
-        if(i == 2 || i == 5 || i == 8)
+        if(i == 2 || i == 5)
+        {
+            cout << '\n';
+            cout<<"_________";
+            cout<<"\n";
+        } else if(i == 8)
         {
             cout << '\n';
         }
         else
         {
-            cout << "|";
+            cout << " | ";
         }
     }
     cout << '\n';
