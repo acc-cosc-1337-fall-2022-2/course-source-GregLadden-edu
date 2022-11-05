@@ -17,13 +17,21 @@ public:
     void mark_board(int position);
     string get_player() const;
     void display_board() const;
+    static string get_winner(string winner);
 
 private:
     vector<string> pegs{" ", " ", " ", " ", " ", " ", " ", " ", " "};
     string player;
+    string winner;
     void set_next_player();
     bool check_board_full();
     void clear_board();
+    void set_winner();
+    bool check_diagonal_win();
+    bool check_row_win();
+    bool check_column_win();
+
+
 
 };
 

@@ -33,8 +33,8 @@ int main()
 
         game.display_board();
         game.game_over();
-        game.display_board();
-
+//        game.display_board();
+        cout<<"\n";
         cout << "Would you like to play again?\nPress 0: Yes\nPress 1: No\n";
         cin >> space;
         if(space == 0)
