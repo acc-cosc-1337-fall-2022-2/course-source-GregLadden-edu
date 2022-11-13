@@ -24,6 +24,7 @@ private:
     void set_next_player();
     bool check_board_full();
     void clear_board();
+    void test1();
 
 };
 
