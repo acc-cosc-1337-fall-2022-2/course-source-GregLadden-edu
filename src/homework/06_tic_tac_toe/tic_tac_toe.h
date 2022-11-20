@@ -30,6 +30,7 @@ private:
     bool check_diagonal_win();
     bool check_row_win();
     bool check_column_win();
+    void test()
 
 
 
