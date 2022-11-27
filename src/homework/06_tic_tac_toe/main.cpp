@@ -71,5 +71,6 @@ int main()
         break;
     }
     cout<<manager;
+    cout<<"new branch"
     return 0;
 }
