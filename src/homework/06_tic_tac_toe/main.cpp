@@ -1,75 +1,73 @@
-#include <iostream>
-#include "tic_tac_toe.h"
-#include "tic_tac_toe_manager.h"
+#include <memory>
 #include "tic_tac_toe_3.h"
 #include "tic_tac_toe_4.h"
-
-using std::cout;
-using std::cin;
+#include "tic_tac_toe_manager.h"
+#include <iostream>
+#include <vector>
+using std::unique_ptr;
 using std::make_unique;
-
+using std::cin;
 int main()
 {
+    TicTacToeData data;
+    TicTacToeManager manager(data);
+    LOOP: string player_choice;
+    std::cout<<"Press 3 for tictactoe 3 and 4 for tictactoe 4: ";
+    int player_choice0;
+    cin>>player_choice0;
     unique_ptr<TicTacToe> game;
-    TicTacToeManager manager;
+    //unique_ptr<TicTacToe> game=make_unique<TicTacToe3>();
 
-    string first_player;
-    int select = 0;
-
-    while (select == 0)
+    if(player_choice0==3)
+        game=make_unique<TicTacToe3>();
+    else if(player_choice0==4)
+        game=make_unique<TicTacToe4>();
+    else
     {
-        string game_selection;
-        do
+        goto LOOP;
+    }
+
+    std::cout<<"\nFirst Player! Please Enter X or O (Capital Letter):\t";
+    std::cin>>player_choice;
+    //std::cin.clear();
+
+    if(player_choice!="X"&&player_choice!="O")
+    {
+        std::cout<<"Enter (Capital) X or O to continue";
+        goto LOOP;
+    }
+
+    game->start_game(player_choice);
+    do //inner loop for marking board
+    {
+        // take position and display board with overloaded operator.
+        std::cin>>*game;//overloaded cin game
+        std::cout<<*game;//overload cout game.
+        if (game->game_over()==true)
         {
-            cout << "Enter 3 for 3x3 Tic Tac Toe\nEnter 4 for 4x4 Tic Tac Toe\n";
-            cin >> game_selection;
-        }
-        while(game_selection != "3" && game_selection != "4");
-
-        if (game_selection == "3")
-        {
-            game = make_unique<TicTacToe3>();
-        }
-        else
-        {
-            game = make_unique<TicTacToe4>();
-        }
-
-        cout << "Player One: Choose X or O\n";
-        cin >> first_player;
-
-        if (first_player == "X" || first_player == "O")
-        {
-            game->start_game(first_player);
-
-            do
-            {
-                cout << *game;
-                cin >> *game;
-            }
-            while (!game->game_over());
-
-            manager.save_game(game);
-
-            int x, o, t;
-            manager.get_winner_totals(x,o,t);
-            cout << "\nX Wins: " << x << "\n";
-            cout << "O Wins: " << o << "\n";
-            cout << "Ties: " << t << "\n";
-
-            cout << "Would you like to play again? Press 0 for continue or 1 to Exit\n";
-            cin >> select;
-        }
-        else
-        {
-            cout << "Invalid entry. Please try again\n";
+            string final_victor= game->get_winner();
+            std::cout<<"\nThe Winner Is:\t"<<final_victor;
         }
     }
-    while (select != 0)
-    {
-        cout<<"Thank you for playing!"<<"\n\n";
-        break;
-    }
-    cout<<manager;
+    while(game->game_over()==false);
+    manager.save_game(game);
+    std::cout<<"\nGame Over\n";
+    int x_win;
+    int o_win;
+    int ties;
+    manager.get_winner_total( o_win,x_win,ties);
+    std::cout<<"Wins for X:\t"<<x_win<<"\nWins for O:\t"<<o_win<<"\nTied games:\t"<<ties;
+    string continue_check;
+    std::cout<<"\nDo you want to continue or exit? If you want to continue enter (Capital) Y. Enter any other key to exit:\t";
+    std::cin>>continue_check;
+    if(continue_check=="Y")//if input ==Y, control will go to beginning, clear board and begin game again.
+        goto LOOP;
+    std::cout<<manager;//manager overload ostream cout.
+
+    int x_wins;
+    int o_wins;
+    int tiess;
+    manager.get_winner_total( o_wins,x_wins,tiess);
+    std::cout<<"\n"<<"Wins for X:\t"<<x_wins<<"\nWins for O:\t"<<o_wins<<"\nTied games:\t"<<tiess;
     return 0;
 }

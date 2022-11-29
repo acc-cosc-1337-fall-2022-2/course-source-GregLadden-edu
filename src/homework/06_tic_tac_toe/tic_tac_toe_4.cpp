@@ -1,9 +1,6 @@
 #include "tic_tac_toe_4.h"
-
-TicTacToe4::TicTacToe4(): TicTacToe(4)
-{
-
-}
+#include <string>
+using std::string;
 
 /*
 class function check_column_win
@@ -17,37 +14,17 @@ false
 */
 bool TicTacToe4::check_column_win()
 {
-
-    bool complete;
-    if(pegs[0] == pegs[4] && pegs[0] == pegs[8] && pegs[0] == pegs[12] && pegs[0] != " ")
-    {
-        complete = true;
-    }
-
-    else if(pegs[1] == pegs[5] && pegs[1] == pegs[9] && pegs[1]  == pegs[13] && pegs[1] != " ")
-    {
-        complete = true;
-    }
-
-    else if(pegs[2] == pegs[6] && pegs[2] == pegs[10] && pegs[2]  == pegs[14] && pegs[2] != " ")
-    {
-        complete = true;
-    }
-
-    else if(pegs[3] == pegs[7] && pegs[3] == pegs[11] && pegs[3]  == pegs[15] && pegs[3] != " ")
-    {
-        complete = true;
-    }
-
-    else
-    {
-        complete = false;
-    }
-
-    return complete;
+    bool return_value=false;
+    if((pegs[0]=="X"&&pegs[4]=="X"&&pegs[8]=="X"&&pegs[12]=="X")||(pegs[0]=="O"&&pegs[4]=="O"&&pegs[8]=="O"&&pegs[12]=="O"))
+        return_value= true;
+    else if((pegs[1]=="X"&&pegs[5]=="X"&&pegs[9]=="X"&&pegs[13]=="X")||(pegs[1]=="O"&&pegs[5]=="O"&&pegs[9]=="O"&&pegs[13]=="O"))
+        return_value= true;
+    else if((pegs[2]=="X"&&pegs[6]=="X"&&pegs[10]=="X"&&pegs[14]=="X")||(pegs[2]=="O"&&pegs[6]=="O"&&pegs[10]=="O"&&pegs[14]=="O"))
+        return_value= true;
+    else if((pegs[3]=="X"&&pegs[7]=="X"&&pegs[11]=="X"&&pegs[15]=="X")||(pegs[3]=="O"&&pegs[7]=="O"&&pegs[11]=="O"&&pegs[15]=="O"))
+        return_value= true;
+    return return_value;
 }
-
-
 
 /*
 class function check_row_win
@@ -59,36 +36,17 @@ Win by row if
 */
 bool TicTacToe4::check_row_win()
 {
-    bool complete;
-    if(pegs[0] == pegs[1] && pegs[0] == pegs[2] && pegs[0] == pegs[3] && pegs[0] != " ")
-    {
-        complete = true;
-    }
-
-    else if(pegs[4] == pegs[5] && pegs[4] == pegs[6] && pegs[4]  == pegs[7] && pegs[4] != " ")
-    {
-        complete = true;
-    }
-
-    else if(pegs[8] == pegs[9] && pegs[8] == pegs[10] && pegs[8]  == pegs[11] && pegs[8] != " ")
-    {
-        complete = true;
-    }
-
-    else if(pegs[12] == pegs[13] && pegs[12] == pegs[14] && pegs[12]  == pegs[15] && pegs[12] != " ")
-    {
-        complete = true;
-    }
-
-    else
-    {
-        complete = false;
-    }
-
-    return complete;
+    bool return_value=false;
+    if((pegs[0]=="X"&&pegs[1]=="X"&&pegs[2]=="X"&&pegs[3]=="X")||(pegs[0]=="O"&&pegs[1]=="O"&&pegs[2]=="O"&&pegs[3]=="O"))
+        return_value= true;
+    else if((pegs[4]=="X"&&pegs[5]=="X"&&pegs[6]=="X"&&pegs[7]=="X")||(pegs[4]=="O"&&pegs[5]=="O"&&pegs[6]=="O"&&pegs[7]=="O"))
+        return_value= true;
+    else  if((pegs[8]=="X"&&pegs[9]=="X"&&pegs[10]=="X"&&pegs[11]=="X")||(pegs[8]=="O"&&pegs[9]=="O"&&pegs[10]=="O"&&pegs[11]=="O"))
+        return_value= true;
+    else  if((pegs[12]=="X"&&pegs[13]=="X"&&pegs[14]=="X"&&pegs[15]=="X")||(pegs[12]=="O"&&pegs[13]=="O"&&pegs[14]=="O"&&pegs[15]=="O"))
+        return_value=true;
+    return return_value;
 }
-
-
 /*
 class function check_diagonal_win
 Win diagonally
@@ -99,19 +57,10 @@ Win diagonally
 */
 bool TicTacToe4::check_diagonal_win()
 {
-    bool complete;
-    if(pegs[0] == pegs[5] && pegs[0] == pegs[10] && pegs[0] == pegs[15] && pegs[0] != " ")
-    {
-        complete = true;
-    }
-
-    else if(pegs[12] == pegs[9] && pegs[12] == pegs[6] && pegs[12] == pegs[3] && pegs[12] != " ")
-    {
-        complete = true;
-    }
-    else
-    {
-        complete = false;
-    }
-    return complete;
+    bool return_value=false;
+    if((pegs[0]=="X"&&pegs[5]=="X"&&pegs[10]=="X"&&pegs[15]=="X")||(pegs[0]=="O"&&pegs[5]=="O"&&pegs[10]=="O"&&pegs[15]=="O"))
+        return_value= true;
+    else  if((pegs[12]=="X"&&pegs[9]=="X"&&pegs[6]=="X"&&pegs[3]=="X")||(pegs[12]=="O"&&pegs[9]=="O"&&pegs[6]=="O"&&pegs[3]=="O"))
+        return_value= true;
+    return return_value;
 }
