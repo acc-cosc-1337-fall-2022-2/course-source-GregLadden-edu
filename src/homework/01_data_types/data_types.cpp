@@ -1,13 +1,14 @@
 #include "data_types.h"
 
 //example
-int add_numbers(int num1, int num2)
+int add_numbers(int numOne, int numTwo)
 {
-	return num1 + num2;
+    return numOne + numTwo;
 }
 
 //write function code here
-
-
-
-
+int multiply_numbers(int numOne)
+{
+    auto numTwo = 5;
+    return numOne * numTwo;
+}
