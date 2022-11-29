@@ -35,13 +35,13 @@ std::vector<std::unique_ptr<TicTacToe>> TicTacToeData::get_games()
     while (getline(inputFile,line))
     {
         vector<string> pegs;
-        for (int i=0; i<(line.size()-1);i++)//can't include last char, that's winner, so -1.
+        for (int i=0; i<(line.size()-1);i++)
         {
             char f = line[i];
             string  x(1,f);
             pegs.push_back(x);
         }
-        auto c=string(1,line[(line.size()-1)]);//get last char in c
+        auto c=string(1,line[(line.size()-1)]);
         string winner=c;
         std::unique_ptr<TicTacToe> board;
         if (pegs.size()==9)

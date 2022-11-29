@@ -2,16 +2,7 @@
 #include <string>
 using std::string;
 
-/*
-class function check_column_win
-Win by column if and return true if (each column index)
-0, 1,  2,  3
-4, 5,  6,  7
-8, 9, 10, 11
-12,13,14, 15
-else
-false
-*/
+
 bool TicTacToe4::check_column_win()
 {
     bool return_value=false;
@@ -26,14 +17,7 @@ bool TicTacToe4::check_column_win()
     return return_value;
 }
 
-/*
-class function check_row_win
-Win by row if
-0, 1,  2,  3 are equal
-4, 5,  6,  7 are equal
-8, 9, 10, 11 are equal
-12,13,14, 15 are equal
-*/
+
 bool TicTacToe4::check_row_win()
 {
     bool return_value=false;
@@ -47,14 +31,7 @@ bool TicTacToe4::check_row_win()
         return_value=true;
     return return_value;
 }
-/*
-class function check_diagonal_win
-Win diagonally
-0, 1,  2,  3
-4, 5,  6,  7
-8, 9, 10, 11
-12,13,14, 15
-*/
+
 bool TicTacToe4::check_diagonal_win()
 {
     bool return_value=false;

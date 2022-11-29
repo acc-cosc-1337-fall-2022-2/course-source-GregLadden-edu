@@ -38,11 +38,11 @@ int main()
     }
 
     game->start_game(player_choice);
-    do //inner loop for marking board
+    do
     {
-        // take position and display board with overloaded operator.
-        std::cin>>*game;//overloaded cin game
-        std::cout<<*game;//overload cout game.
+
+        std::cin>>*game;
+        std::cout<<*game;
         if (game->game_over()==true)
         {
             string final_victor= game->get_winner();
@@ -60,9 +60,8 @@ int main()
     string continue_check;
     std::cout<<"\nDo you want to continue or exit? If you want to continue enter (Capital) Y. Enter any other key to exit:\t";
     std::cin>>continue_check;
-    if(continue_check=="Y")//if input ==Y, control will go to beginning, clear board and begin game again.
-        goto LOOP;
-    std::cout<<manager;//manager overload ostream cout.
+    if(continue_check=="Y")
+    std::cout<<manager;
 
     int x_wins;
     int o_wins;

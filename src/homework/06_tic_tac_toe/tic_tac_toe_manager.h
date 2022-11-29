@@ -9,11 +9,11 @@ class TicTacToeManager
 {
 public:
     TicTacToeManager()=default;
-    TicTacToeManager(TicTacToeData &data1);//constructor defined in cpp
-    ~TicTacToeManager();//destructor defined in cpp
+    TicTacToeManager(TicTacToeData &data1);
+    ~TicTacToeManager();
     friend std::ostream& operator<<(std::ostream& out, const TicTacToeManager& manager);
-    void save_game(std::unique_ptr<TicTacToe> &b);// note: the instructions on how to set up save game function mean that the tests will also update winner counts,
-    void get_winner_total(int& o, int& w, int& t);//seems like w should be x, but instructions said.
+    void save_game(std::unique_ptr<TicTacToe> &b);
+    void get_winner_total(int& o, int& w, int& t);
 
 private:
     vector<std::unique_ptr<TicTacToe>> games;

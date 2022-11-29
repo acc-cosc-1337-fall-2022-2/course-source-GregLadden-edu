@@ -118,14 +118,13 @@ std::ostream& operator<<(std::ostream& out, const TicTacToe &game)
 }
 std::istream& operator>>(std::istream& in, TicTacToe& game)
 {
-    Position_Loop:int position;//will loop to here for bad input.
+    Position_Loop:int position;
     if (game.pegs.size()==9)
     {
         std::cout<<"\n What position do you wish to play? Choose 1-9:\t";
         std::cin>>position;
         std::cin.clear();
         std::cin.sync();
-        //input validation: if input not in proper range get new input.
 
         if (position!=1 && position!=2 && position!=3 && position!=4 && position!=5 && position!=6 && position!=7 && position!=8 && position!=9)
         {
@@ -137,7 +136,7 @@ std::istream& operator>>(std::istream& in, TicTacToe& game)
             std::cout<<"You can't play that position-- someone already did.";
             goto Position_Loop;
         }
-        //move has passed validation. add to board moves.
+
         game.mark_board(position);
     }
     else
@@ -156,7 +155,7 @@ std::istream& operator>>(std::istream& in, TicTacToe& game)
             std::cout<<"You can't play that position-- someone already did.";
             goto Position_Loop;
         }
-        //move has passed validation. add to board moves.
+
         game.mark_board(position);
     }
 
